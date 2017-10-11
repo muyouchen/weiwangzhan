@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<script type="text/javascript" src="js/setviewport1080.js" ></script>
+	<script type="text/javascript" src="js/jquery-1.11.1.min.js" ></script>
+	<link rel="stylesheet" href="css/head&bottom-d.css" />
+	<link rel="stylesheet" href="css/transfer-record.css" />
+	<script type="text/javascript" src="js/iscroll.js" ></script>
+	<script type="text/javascript" src="js/pullToRefresh.js" ></script>
+	<title>转让记录</title>
+</head>
+<body>
+	<div class="tra-r-mgbox">
+		<!--头部-->
+		<div class="title2-1080">
+            <a href="financeList.do" class="title_left1080">
+                <img src="img/bk-c-return-g.png">
+            </a>
+            <span>转让记录</span>
+        </div>	
+        <div class="tra-rec-qhtxt1">
+			<div class="tra-rec-qhtxt1i">
+				<div class="tra-rec-qhtxt1i1 fl">
+					<p>转让人</p>
+				</div>	
+				<div class="tra-rec-qhtxt1i2 fl">
+					<p>转让金额(元)</p>
+				</div>
+				<div class="tra-rec-qhtxt1i1 fl">
+					<p>转让时间</p>
+				</div>	
+			</div>
+		</div>
+				
+        <!--切换的内容-->
+		<div class="tra-rec-qhcontent">
+			<!--转让记录  没记录 加no-recoo-->	
+			<div class="inv-recoi">
+				<!--有记录-->
+				<div class="has-reco has-reco1" id="wrapper">	
+					<ul class="has-reci">
+						<!--数据-->
+						<li class="tra-rec-qhtxt2">
+							<div class="tra-rec-qhtxt2i">
+								<div class="tra-rec-qhtxt1i1 fl">
+									<p>158****1204</p>
+								</div>	
+								<div class="tra-rec-qhtxt1i2 fl">
+									<p>84500.00</p>
+								</div>
+								<div class="tra-rec-qhtxt1i1 fl">									
+									<p class="tra-rec-qhtxt1i1-1">2017-02-28</p>
+								</div>	
+							</div>
+						</li>
+					</ul>
+				</div>														
+				<!--没记录-->
+				<div class="no-reco">
+					<div class="tra-rec-nr">
+						<img src="img/ttbp-noreco.png">	
+					</div>
+					<p class="tra-rec-nr-txt1">暂无购买记录</p>
+				</div>
+			</div>
+			
+			
+		</div>	
+	
+        
+	
+		
+	</div>	
+</body>
+<script>
+	document.addEventListener('touchstart',function(){},false);	
+	
+</script>
+<script>
+			
+	$(document).ready(function(){
+		var clientHeight = $("html")[0].clientHeight;
+    $(".tra-r-mgbox").css("min-height",(clientHeight));
+　　})			
+</script>
+<script>
+	refresher.init({
+	    id: "wrapper",
+	    pullUpAction: Load
+	});
+	var generatedCount = 0;
+
+	function Load() {
+
+
+		$.ajax({
+                type: 'GET',
+                url: 'json/more.json',
+                dataType: 'json',
+                success: function(data){
+                    var result = '';
+                    for(var i = 0; i < data.lists.length; i++){
+                        result +=   '<li class="tra-rec-qhtxt2"><div class="tra-rec-qhtxt2i">'
+                                        +'<div class="tra-rec-qhtxt1i1 fl"><p>'+data.lists[i].assignor+'</p></div>'
+                                        +'<div class="tra-rec-qhtxt1i2 fl"><p>'+data.lists[i].transferamount+'</p></div>'
+                                        +'<div class="tra-rec-qhtxt1i1 fl"><p class="tra-rec-qhtxt1i1-1">'+data.lists[i].date+'</p></div>'
+                                    +'</div></li>';
+                    }
+                    // 为了测试，延迟1秒加载
+                    setTimeout(function(){
+                        $('.has-reci').append(result);
+                        // 每次数据加载完，必须重置
+                        wrapper.refresh();
+                    },1000);
+                },
+                error: function(xhr, type){
+                    alert('Ajax error!');
+                    // 即使加载出错，也得重置
+                    wrapper.refresh();
+                }
+            });
+
+
+	}
+	
+	
+	//joson
+
+	
+	
+	
+	
+	
+</script>
+
+</html>

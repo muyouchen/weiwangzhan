@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<title>试卷</title>
+	<script src="js/rem.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/common.css" />
+	<script src="js/zepto.min.js"></script>
+	<script src="js/touch.js"></script>
+	<style>
+		header .hllian{
+			position:absolute;
+			top:0.285rem;  
+			left:0.2rem; 
+			width:0.43rem;
+			height:0.43rem;
+			background:url(image/a9.png);
+			background-size:cover;
+		}
+		.caidan a{
+			text-decoration:none;
+			color:#666666;  
+		}
+		a.jia{
+			color:#8dc342;
+		}
+		.tuu1{
+			background:url(image/a21.png) !important;
+			background-size:cover !important;
+		}
+		.zi1{
+			color:#666666 !important; 
+		}
+		.tuu2{
+			background:url(image/a24.png) !important;
+			background-size:cover !important;
+		}
+		.zi2{
+			color:#50b52e !important; 
+		}
+	</style>
+</head>
+<body >
+	<!--头部-->
+	<header>
+		<a class="hllian" href="index.html"></a>
+		<span style="font-size:0.42rem;color:#333333;position:absolute;top:0.24rem;left:45%;">试卷</span>
+		<div class="hr"></div>
+		<div class="hcd">
+			<span class="arrow"></span>
+			<ul>
+				<li style="background:#f0f0f0; ">
+					<a href="jiaoxuedian.html">
+						<div style="display:flex;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;justify-content:center;align-items: center;  ">
+							<img src="image/a2.png" style="width:0.35rem;height:0.35rem;margin-right: 0.2rem;"/>
+							<span>教学点</span>
+						</div>	
+					</a>
+				</li>
+				<li style="background:#ffffff; ">
+					<a href="kecheng.html">
+						<div style="display:flex;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;justify-content:center;align-items: center;position: relative;left:-0.15rem;  ">
+							<img src="image/a3.png" style="width:0.35rem;height:0.35rem;margin-right: 0.2rem;"/>
+							<span>课程</span>
+						</div>	
+					</a>
+				</li>
+				<li style="background:#f0f0f0; ">
+					<a href="shijuan.html">
+						<div style="display:flex;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;justify-content:center;align-items: center;position: relative;left:-0.15rem;  ">
+							<img src="image/a4.png" style="width:0.35rem;height:0.35rem;margin-right: 0.2rem;"/>
+							<span>试卷</span>
+						</div>	
+					</a>
+				</li>
+				<li style="background:#ffffff; "><a href="guanyu.html">关于我们</a></li>
+				<li style="border:none;background:#f0f0f0; "><a href="lianxi.html">联系我们</a></li>
+			</ul>
+		</div>
+	</header>
+	<!--菜单区-->
+	<article style="border-top:0.01rem solid #ddd;font-size:0.3rem;color: #666666; padding:0.4rem 0.2rem;position:relative;    " class="caidan">
+		<img src="image/a14.png" style="width:0.25rem;height:0.2rem;position: absolute;right:0.25rem;top:0.57rem;" class="caik1" />
+		<img src="image/a14.png" style="width:0.25rem;height:0.2rem;position: absolute;top:2.07rem;right:0.25rem;" class="caik2" />
+		<img src="image/a14.png" style="width:0.25rem;height:0.2rem;position: absolute;top:2.85rem;right:0.25rem;" class="caik3" />
+		<section style="margin-bottom:0.3rem;margin-right:0.3rem;line-height: 0.6rem;height:0.45rem;overflow:hidden;   " class="jcai1">
+			<img src="image/a16.png" style="width:0.3rem;height:0.3rem;margin-right: 0.2rem;position: relative;top:0.03rem; left:0.02rem;"/>
+			<span style="margin-right:0.35rem; ">试卷类型</span>
+			<span style="color:#8dc342;margin-right:0.35rem;">全部</span>
+			<a  href="#"><span style="margin-right:0.2rem; ">入学测试</span></a>
+			<a  href="#"><span style="margin-right:0.2rem; ">同步练习</span></a>
+			<a  href="#"><span style="margin-right:0.2rem; ">专题练习</span></a>
+			<a  href="#"><span style="margin-right:0.2rem;">单元测试</span></a>
+			<a  href="#"><span style="margin-right:0.2rem; ">期中考试</span></a>
+			<a  href="#"><span style="margin-right:0.2rem; ">期末考试</span></a>
+			<a  href="#"><span style="margin-right:0.2rem; ">模拟考试</span></a>
+			<a  href="#"><span style="margin-right:0.2rem; ">真题试卷</span></a>	
+		</section>
+		<section style="margin-bottom:0.3rem;margin-right:0.3rem;line-height: 0.6rem;height:0.45rem;overflow:hidden;   ">
+			<img src="image/a17.png" style="width:0.3rem;height:0.3rem;margin-right: 0.2rem;position: relative;top:0.03rem;"/>
+			<span style="margin-right:0.35rem; ">辅导学段</span>
+			<span style="color:#8dc342;margin-right:0.35rem;">全部</span>
+			<a  href="#"><span style="margin-right:0.2rem; ">小学</span></a>
+			<a  href="#"><span style="margin-right:0.2rem; ">初中</span></a>
+			<a  href="#"><span style="margin-right:0.2rem; ">高中</span></a>
+		</section>
+		<section style="margin-bottom:0.3rem;margin-right:0.3rem;line-height: 0.6rem;height:0.45rem;overflow:hidden;   " class="jcai2">
+			<img src="image/a18.png" style="width:0.39rem;height:0.3rem;margin-right: 0.14rem;position: relative;top:0.03rem;"/>
+			<span style="margin-right:0.31rem; ">年&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;级</span>
+			<span style="color:#8dc342;margin-right:0.35rem;">全部</span>
+			<a  href="#"><span style="margin-right:0.2rem; ">一年级</span></a>
+			<a  href="#"><span style="margin-right:0.2rem; ">二年级</span></a>
+			<a  href="#"><span style="margin-right:0.2rem; ">三年级</span></a>
+			<a  href="#"><span style="margin-right:0.2rem; ">四年级</span></a>
+			<a  href="#"><span style="margin-right:0.2rem; ">五年级</span></a>
+			<a  href="#"><span style="margin-right:0.2rem; ">六年级</span></a>
+			<a  href="#"><span style="margin-right:0.2rem; ">七年级</span></a>
+			<a  href="#"><span style="margin-right:0.2rem; ">八年级</span></a>
+			<a  href="#"><span style="margin-right:0.2rem; ">九年级</span></a>
+			<a  href="#"><span style="margin-right:0.2rem; ">高一</span></a>
+			<a  href="#"><span style="margin-right:0.2rem; ">高二</span></a>
+			<a  href="#"><span style="margin-right:0.2rem; ">高三</span></a>
+			<a  href="#"><span style="margin-right:0.2rem; ">小升初</span></a>
+			<a  href="#"><span style="margin-right:0.2rem; ">中考</span></a>
+			<a  href="#"><span style="margin-right:0.2rem; ">高考</span></a>
+			<a  href="#"><span style="margin-right:0.2rem; ">初级</span></a>
+			<a  href="#"><span style="margin-right:0.2rem; ">中级</span></a>
+			<a  href="#"><span style="margin-right:0.2rem; ">高级</span></a>	
+		</section>
+		<section style="margin-bottom:0.3rem;margin-right:0.3rem;line-height: 0.6rem;height:0.45rem;overflow:hidden;   " class="jcai3">
+			<img src="image/a19.png" style="width:0.3rem;height:0.3rem;margin-right: 0.14rem;position: relative;top:0.03rem;left:0.02rem;"/>
+			<span style="margin-right:0.31rem; ">&nbsp;学&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;科</span>
+			<span style="color:#8dc342;margin-right:0.35rem;">全部</span>
+			<a  href="#"><span style="margin-right:0.2rem; ">语文</span></a>
+			<a  href="#"><span style="margin-right:0.2rem; ">数学</span></a>
+			<a  href="#"><span style="margin-right:0.2rem; ">英语</span></a>
+			<a  href="#"><span style="margin-right:0.2rem; ">物理</span></a>
+			<a  href="#"><span style="margin-right:0.2rem; ">化学</span></a>
+			<a  href="#"><span style="margin-right:0.2rem; ">科学</span></a>
+			<a  href="#"><span style="margin-right:0.2rem; ">生物</span></a>
+			<a  href="#"><span style="margin-right:0.2rem; ">政治</span></a>
+			<a  href="#"><span style="margin-right:0.2rem; ">历史与社会</span></a>
+			<a  href="#"><span style="margin-right:0.2rem; ">地理</span></a>
+			<a  href="#"><span style="margin-right:0.2rem; ">历史</span></a>
+			<a  href="#"><span style="margin-right:0.2rem; ">创意编程</span></a>
+		</section>
+		<section style="margin-right:0.3rem;line-height: 0.6rem;height:0.45rem;overflow:hidden;   ">
+			<img src="image/a20.png" style="width:0.32rem;height:0.32rem;margin-right: 0.14rem;position: relative;top:0.03rem;"/>
+			<span style="margin-right:0.31rem; ">&nbsp;学&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;期</span>
+			<span style="color:#8dc342;margin-right:0.35rem;">全部</span>
+			<a  href="#"><span style="margin-right:0.2rem; ">春季</span></a>
+			<a  href="#"><span style="margin-right:0.2rem; ">秋季</span></a>
+			<a  href="#"><span style="margin-right:0.2rem; ">暑假</span></a>
+			<a  href="#"><span style="margin-right:0.2rem; ">寒假</span></a>
+		</section>
+	</article>
+	<!--搜索-->
+	<article style="height:0.9rem;line-height:0.9rem;width:100%;padding:0 0.38rem 0 0.32rem;font-size: 0.3rem;background:#f0f0f0;   " class="soso">
+		<input placeholder="输入试卷名称关键字搜索" style="width:5.8rem;height:0.55rem;border-radius:0.15rem;outline:none;margin-right:0.3rem;   border:0.01rem solid #ffffff;text-indent:2em;font-size:0.3rem;    "/>	
+		<span style="color:#51b431;">搜索</span>
+	</article>
+	<!--试卷展示-->
+	<article class="scai" style="z-index:100; ">
+		<div style="width:100%;height:0.9rem;display:flex;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;border-bottom:0.01rem solid #ddd; z-index:120;   " class="scai">
+			<div style="flex:1;display:flex;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;justify-content: center;align-items: center;border-right:0.01rem solid #ddd;     " class="shixu1">
+				<div  style="width:0.36rem;height:0.23rem;margin-right:0.2rem;background:url(image/a22.png); background-size:cover; " /></div>
+				<span style="color:#50b52e;font-size:0.3rem; ">默认排序</span>
+			</div>
+			<div style="flex:1;display:flex;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;justify-content: center;align-items: center;   " class="shixu2">
+				<div  style="width:0.38rem;height:0.34rem;margin-right:0.2rem;background:url(image/a23.png); background-size:cover; " ></div>
+				<span style="color:#666666;font-size:0.3rem; ">人气</span>
+			</div>
+		</div>
+		<section style="margin:0.2rem;margin-bottom:0;margin-top:0.25rem;z-index: 100;height:11.8rem;overflow-y: scroll;    ">
+			<a href="#" style="height:1.7rem;width:100%;display:flex;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;margin-bottom:0.2rem; text-decoration: none; ">
+				<img src="image/lun1.jpg" style="width: 2.23rem;height: 1.63rem;margin-right:0.24rem; " />
+				<div>
+					<h2 style="font-size:0.3rem;color:#666666;margin-top:0.1rem;  ">2015年广东初二英语统考试卷</h2>
+					<p style="font-size:0.3rem;color:#999999;margin-top:0.15rem;">
+							测评：<span style="color: #8dc342;">5</span>
+					</p>
+					<p style="font-size:0.3rem;color:#999999;margin-top:0.15rem;">
+							浏览：<span style="color: #8dc342;">122</span>
+					</p>
+				</div>	
+			</a>
+			<a href="#" style="height:1.7rem;width:100%;display:flex;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;margin-bottom:0.2rem; text-decoration: none; ">
+				<img src="image/lun1.jpg" style="width: 2.23rem;height: 1.63rem;margin-right:0.24rem; " />
+				<div>
+					<h2 style="font-size:0.3rem;color:#666666;margin-top:0.1rem;  ">2015年广东初二英语统考试卷</h2>
+					<p style="font-size:0.3rem;color:#999999;margin-top:0.15rem;">
+							测评：<span style="color: #8dc342;">5</span>
+					</p>
+					<p style="font-size:0.3rem;color:#999999;margin-top:0.15rem;">
+							浏览：<span style="color: #8dc342;">122</span>
+					</p>
+				</div>	
+			</a>
+			<a href="#" style="height:1.7rem;width:100%;display:flex;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;margin-bottom:0.2rem; text-decoration: none; ">
+				<img src="image/lun1.jpg" style="width: 2.23rem;height: 1.63rem;margin-right:0.24rem; " />
+				<div>
+					<h2 style="font-size:0.3rem;color:#666666;margin-top:0.1rem;  ">2015年广东初二英语统考试卷</h2>
+					<p style="font-size:0.3rem;color:#999999;margin-top:0.15rem;">
+							测评：<span style="color: #8dc342;">5</span>
+					</p>
+					<p style="font-size:0.3rem;color:#999999;margin-top:0.15rem;">
+							浏览：<span style="color: #8dc342;">122</span>
+					</p>
+				</div>	
+			</a>
+			<a href="#" style="height:1.7rem;width:100%;display:flex;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;margin-bottom:0.2rem; text-decoration: none; ">
+				<img src="image/lun1.jpg" style="width: 2.23rem;height: 1.63rem;margin-right:0.24rem; " />
+				<div>
+					<h2 style="font-size:0.3rem;color:#666666;margin-top:0.1rem;  ">2015年广东初二英语统考试卷</h2>
+					<p style="font-size:0.3rem;color:#999999;margin-top:0.15rem;">
+							测评：<span style="color: #8dc342;">5</span>
+					</p>
+					<p style="font-size:0.3rem;color:#999999;margin-top:0.15rem;">
+							浏览：<span style="color: #8dc342;">122</span>
+					</p>
+				</div>	
+			</a>
+			<a href="#" style="height:1.7rem;width:100%;display:flex;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;margin-bottom:0.2rem; text-decoration: none; ">
+				<img src="image/lun1.jpg" style="width: 2.23rem;height: 1.63rem;margin-right:0.24rem; " />
+				<div>
+					<h2 style="font-size:0.3rem;color:#666666;margin-top:0.1rem;  ">2015年广东初二英语统考试卷</h2>
+					<p style="font-size:0.3rem;color:#999999;margin-top:0.15rem;">
+							测评：<span style="color: #8dc342;">5</span>
+					</p>
+					<p style="font-size:0.3rem;color:#999999;margin-top:0.15rem;">
+							浏览：<span style="color: #8dc342;">122</span>
+					</p>
+				</div>	
+			</a>
+			<a href="#" style="height:1.7rem;width:100%;display:flex;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;margin-bottom:0.2rem; text-decoration: none; ">
+				<img src="image/lun1.jpg" style="width: 2.23rem;height: 1.63rem;margin-right:0.24rem; " />
+				<div>
+					<h2 style="font-size:0.3rem;color:#666666;margin-top:0.1rem;  ">2015年广东初二英语统考试卷</h2>
+					<p style="font-size:0.3rem;color:#999999;margin-top:0.15rem;">
+							测评：<span style="color: #8dc342;">5</span>
+					</p>
+					<p style="font-size:0.3rem;color:#999999;margin-top:0.15rem;">
+							浏览：<span style="color: #8dc342;">122</span>
+					</p>
+				</div>	
+			</a>
+			<a href="#" style="height:1.7rem;width:100%;display:flex;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;margin-bottom:0.2rem; text-decoration: none; ">
+				<img src="image/lun1.jpg" style="width: 2.23rem;height: 1.63rem;margin-right:0.24rem; " />
+				<div>
+					<h2 style="font-size:0.3rem;color:#666666;margin-top:0.1rem;  ">2015年广东初二英语统考试卷</h2>
+					<p style="font-size:0.3rem;color:#999999;margin-top:0.15rem;">
+							测评：<span style="color: #8dc342;">5</span>
+					</p>
+					<p style="font-size:0.3rem;color:#999999;margin-top:0.15rem;">
+							浏览：<span style="color: #8dc342;">122</span>
+					</p>
+				</div>	
+			</a>
+			<a href="#" style="height:1.7rem;width:100%;display:flex;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;margin-bottom:0.2rem; text-decoration: none; ">
+				<img src="image/lun1.jpg" style="width: 2.23rem;height: 1.63rem;margin-right:0.24rem; " />
+				<div>
+					<h2 style="font-size:0.3rem;color:#666666;margin-top:0.1rem;  ">2015年广东初二英语统考试卷</h2>
+					<p style="font-size:0.3rem;color:#999999;margin-top:0.15rem;">
+							测评：<span style="color: #8dc342;">5</span>
+					</p>
+					<p style="font-size:0.3rem;color:#999999;margin-top:0.15rem;">
+							浏览：<span style="color: #8dc342;">122</span>
+					</p>
+				</div>	
+			</a>
+			<a href="#" style="height:1.7rem;width:100%;display:flex;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;margin-bottom:0.2rem; text-decoration: none; ">
+				<img src="image/lun1.jpg" style="width: 2.23rem;height: 1.63rem;margin-right:0.24rem; " />
+				<div>
+					<h2 style="font-size:0.3rem;color:#666666;margin-top:0.1rem;  ">2015年广东初二英语统考试卷</h2>
+					<p style="font-size:0.3rem;color:#999999;margin-top:0.15rem;">
+							测评：<span style="color: #8dc342;">5</span>
+					</p>
+					<p style="font-size:0.3rem;color:#999999;margin-top:0.15rem;">
+							浏览：<span style="color: #8dc342;">122</span>
+					</p>
+				</div>	
+			</a>
+		</section>	
+	</article>
+	<!--底部-->
+	<footer style="font-size: 0.24rem;color:#5b5b5b;display: flex;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;justify-content: center;align-items: center;   ">
+		<p>
+			&copy;&nbsp;2016&nbsp;&nbsp;&nbsp;深圳市考拉超课科技股份有限公司版权所有	
+		</p>
+	</footer>
+	
+	<script type="text/javascript">
+		$(function(){
+			var jiaoji1=0;
+			var jiaoji2=0;
+			var jiaoji3=0;
+			$(window).scroll(function(){
+				var mTop = document.getElementsByClassName('scai')[0].offsetTop;
+			    var sTop = document.body.scrollTop;
+			    var result = mTop - sTop;
+			  	if(result<=0){
+			  		alert("置顶");
+			  		$(".scai").css({"position":"fixed !important","top":0});
+			  		$(".scai").css({"z-index":"100 !important"});
+			  		$("header").css({"display":"none"});
+			  		$(".caidan").css({"display":"none"});
+			  		$(".soso").css({"display":"none"});
+			  		$("footer").css({"display":"none"});
+			  	}
+			  	else{
+			  		
+			  		$(".scai").css({"position":"static"});
+			  	}
+			});
+			
+
+
+			$(".hr").on("tap",function(){
+				 $("header .hcd").toggle();	
+		    });	
+			$(".caik1").on("tap",function(){
+		    	if($(".jcai1").css("overflow") == "hidden" ){
+		    		$(this).attr("src","image/a15.png");
+		    		$(".jcai1").height("auto"); 
+					$(".jcai1").css("overflow",null);
+					$(".jcai1").css("margin-bottom","0.1rem;");
+					jiaoji1=$(".jcai1").height()+parseInt($("body").css("font-size"))*1.45;
+					$(".caik2").css("top",jiaoji1+"px");
+					if($(".jcai2").css("overflow") == "hidden" ){
+
+						jiaoji2=$(".jcai1").height()+parseInt($("body").css("font-size"))*2.2;
+						$(".caik3").css("top",jiaoji2+"px");	
+					}
+					if($(".jcai2").css("overflow") != "hidden" ){
+						jiaoji2=$(".jcai1").height()+parseInt($("body").css("font-size"))*3.95;
+						$(".caik3").css("top",jiaoji2+"px");
+					}
+		    	}
+		    	else{
+		    		$(this).attr("src","image/a14.png");
+		    		$(".jcai1").height("0.45rem"); 
+					$(".jcai1").css("overflow","hidden");
+					$(".jcai1").css("margin-bottom","0.3rem;");
+					$(".caik2").css("top","2.25rem");
+					$(".caik3").css("top","3rem");
+					if($(".jcai2").css("overflow") != "hidden" ){
+						jiaoji2=$(".jcai1").height()+parseInt($("body").css("font-size"))*4.13;
+						$(".caik3").css("top",jiaoji2+"px");
+						$(".caik2").css("top",$(".jcai1").height()+parseInt($("body").css("font-size"))*1.68+"px");	
+					}
+					if($(".jcai2").css("overflow") == "hidden" ){
+						
+						jiaoji2=$(".jcai1").height()+parseInt($("body").css("font-size"))*2.37;
+						$(".caik3").css("top",jiaoji2+"px");
+						$(".caik2").css("top",$(".jcai1").height()+parseInt($("body").css("font-size"))*1.64+"px");	
+					}
+					
+		    	} 
+		    });
+		    $(".caik2").on("tap",function(){
+		    	if($(".jcai2").css("overflow") == "hidden" ){
+		    		$(this).attr("src","image/a15.png");
+		    		$(".jcai2").height("auto"); 
+					$(".jcai2").css("overflow",null);
+					$(".jcai2").css("margin-bottom","0.1rem;");
+					if($(".jcai1").css("overflow") == "hidden" ){
+						
+						jiaoji3=$(".jcai1").height()+parseInt($("body").css("font-size"))*4.12;
+						$(".caik3").css("top",jiaoji3+"px");	
+					}
+					if($(".jcai1").css("overflow") != "hidden" ){
+						jiaoji3=$(".jcai1").height()+parseInt($("body").css("font-size"))*3.93;
+						$(".caik3").css("top",jiaoji3+"px");	
+					}
+					
+		    	}
+		    	else{
+		    		$(this).attr("src","image/a14.png");
+		    		$(".jcai2").height("0.45rem"); 
+					$(".jcai2").css("overflow","hidden");
+					$(".jcai2").css("margin-bottom","0.3rem;");
+					$(".caik3").css("top","3rem");
+					if($(".jcai1").css("overflow") == "hidden" ){
+						jiaoji2=$(".jcai1").height()+parseInt($("body").css("font-size"))*2.4;
+						$(".caik3").css("top",jiaoji2+"px");	
+					}
+					if($(".jcai1").css("overflow") != "hidden" ){
+						jiaoji2=$(".jcai1").height()+parseInt($("body").css("font-size"))*2.21;
+						$(".caik3").css("top",jiaoji2+"px");	
+					}
+		    	} 
+		    });
+		     $(".caik3").on("tap",function(){
+		    	if($(".jcai3").css("overflow") == "hidden" ){
+		    		$(this).attr("src","image/a15.png");
+		    		$(".jcai3").height("auto"); 
+					$(".jcai3").css("overflow",null);
+					
+		    	}
+		    	else{
+		    		$(this).attr("src","image/a14.png");
+		    		$(".jcai3").height("0.45rem"); 
+					$(".jcai3").css("overflow","hidden");
+		    	} 
+		    });
+		    $(".caidan a").on("tap",function(){
+
+				 $(".caidan a").removeClass("jia");	
+				 $(this).toggleClass("jia");
+		    });
+		    $(".shixu1").on("tap",function(){
+		    	$(".shixu2").find("div").removeClass("tuu2");
+				$(".shixu2").find("span").removeClass("zi2");
+				$(this).find("div").removeClass("tuu1");
+				$(this).find("span").removeClass("zi1");	
+		    });
+		    $(".shixu2").on("tap",function(){
+		    	$(".shixu1").find("div").addClass("tuu1");
+				$(".shixu1").find("span").addClass("zi1");	
+				$(this).find("div").addClass("tuu2");
+				$(this).find("span").addClass("zi2");	
+		    });				
+		});
+	</script>
+</body>
+</html>

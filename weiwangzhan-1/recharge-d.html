@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<!--<script type="text/javascript" src="js/setviewport1080.js" ></script>-->
+	<script type="text/javascript" src="js/jquery-1.11.1.min.js" ></script>
+	<link rel="stylesheet" href="css/head&bottom-d.css" />
+	<link rel="stylesheet" href="css/recharge-d.css" />
+	<title>充值</title>
+</head>
+<body>
+	<div class="ppb-box">
+		<div class="ppb-boxi">
+			<!--头部  显示隐藏头部 show-scroll-top-->
+			<div class="rech-topo">
+				<!--隐藏头部-->	
+				<div class="scroll-top">
+					<div class="rech-top2">
+						<a href="javascript:;" class="return-icon-w"></a>	
+						<span>充值</span>												
+					</div>
+				</div>
+				<div class="rech-top">
+					<div class="rech-top1">
+						<a href="javascript:;" class="return-icon-w"></a>	
+						<span>充值</span>						
+					</div>
+				
+					<div class="rech-tb">
+						<div class="rech-tb1">
+							<div class="fl rech-bkc-icon">
+								<img src="img/ghb-logo.jpg" />	
+							</div>	
+							<div class="fl rech-tb-txt1">
+								<div class="rech-tb-txt1a">
+									<span>广东华兴银行</span>
+									<span class="rech-tb-txt1a2">E账户</span>
+								</div>	
+								<div class="rech-tb-txt1b">623063 000001319311</div>
+							</div>
+						</div>
+						<div class="rech-input">
+							<span class="fl">充值金额：</span>
+							<input type="tel" class="rech-inputi" placeholder="请输入金额" />
+						</div>							
+					</div>
+				</div>
+				
+			</div>
+			<!--充值流程-->
+			<div class="rech-pro-txt1">
+				充值流程
+			</div>
+			<div class="rech-pro">
+				<div class="rech-pro1">
+					<i class="rech-proi"></i>	
+					<i class="rech-proi rech-proi2"></i>
+					<i class="rech-proi3"></i>
+				</div>				
+			</div>
+			<div class="rech-pro-a">
+				<div class="rech-pro2a rech-pro2a1">
+					<p>转账至华兴</p>
+					<p>银行E账户</p>
+				</div>
+				<div class="rech-pro2a rech-pro2a2">
+					<p>转账至华兴</p>
+					<p>进行充值</p>
+				</div>
+				<div class="rech-pro2a rech-pro2a2">
+					<p>转账至华兴</p>					
+				</div>
+			</div>	
+			<!--线-->
+			<span class="xq-line1"></span>
+			<!--温馨提示-->
+			<div class="rech-tipso">
+				<div class="rech-tips">
+					温馨提示					
+				</div>
+				<div class="rech-tipsi">
+					<p>1.如您未绑定银行卡，点击前往<a href="javascript:;">绑定银行卡></a></p>
+					<p>2.开通华兴银行E账户后，才能进行充值操作。<a href="javascript:;">指引></a></p>
+					<p>3.华兴银行E账户充值到票据宝金融时候到账，他行关联卡充值到票据宝金融T+1日到账。</p>
+					<p>4.通过同名其他银行卡的网银、手机银行等渠道先转账至华兴银行E账户，再从华兴银行E账户充值到票据宝金融平台账户。网上银行转账是收款银行选择【城市商业银行】（或者是其他银行）-广东华兴银行，汇入地：广东汕头市（部分银行需要），收款账户开户网点：广东华兴银行汕头分行。</p>
+					<p>5.免费提现，不收取任何手续费。</p>
+					<p>6.如有遇到操作上的问题，请拨打票据宝金融客服电话：400-1889138</p>
+				</div>
+			</div>
+			<!--购买按钮-->
+			<div class="xq-btno2">				
+				<a href="javascript:;" class="xq-btn2">立即购买</a>		
+			</div>
+			
+	</div>
+</body>
+<script>
+	document.addEventListener('touchstart',function(){},false);	
+	
+</script>
+<script>
+			
+	$(document).ready(function(){
+		var clientHeight = $("html")[0].clientHeight;
+    $(".ppb-box").css("min-height",(clientHeight));
+　　})			
+</script>
+<script>
+	$(document).ready(function(){
+     $(window).scroll(function() {
+         var top = $(".rech-top").offset().top; //获取指定位置
+         var scrollTop = $(window).scrollTop();  //获取当前滑动位置
+         if(scrollTop > top){                 //滑动到该位置时执行代码
+           $(".rech-topo").addClass("show-scroll-top");
+         }else{
+           $(".rech-topo").removeClass("show-scroll-top");
+         }
+         });
+        });
+       var doc=document.documentElement,scale = doc.clientWidth / 1080;
+doc.style.fontSize =doc.clientWidth / 10.80 + 'px';
+</script>
+
+</html>

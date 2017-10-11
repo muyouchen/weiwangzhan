@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<script type="text/javascript" src="js/setviewport1080.js" ></script>
+	<script type="text/javascript" src="js/jquery-1.11.1.min.js" ></script>
+	<link rel="stylesheet" href="css/head&bottom-d.css" />
+	<link rel="stylesheet" href="css/purchase-res.css" />
+	<title>购买结果</title>
+</head>
+<body>	
+	<div class="pur-box">
+		<div class="pur-boxi">
+			<!--头部  显示隐藏头部 show-scroll-top-->			
+			<div class="pur-topo">				
+				<div class="pur-top">
+					<div class="pur-top1">
+						<a href="javascript:;" class="return-icon-w"></a>	
+						<span>购买结果</span>						
+					</div>				
+					<div class="pur-tbo">
+						<div class="pur-tb">
+							<div class="pur-tbi">
+								<div class="tra-icon tra-icon1 fl"></div>
+								<div class="fl tra-r-txt1">
+									<p class="tra-r-txt1a">成功转入:<span>600000.00元</span></p>	
+									<p class="tra-r-txt1b">今天09:20:22</p>
+								</div>
+								<div class="ckmx-btno fr">
+									<a class="ckmx-btn" href="javascript:;">查看明细</a>
+								</div>
+							</div>
+							<div class="pur-tbi2">
+								<div class="tra-icon tra-icon5 fl"></div>
+								<div class="fl tra-r-txt1">
+									<p class="tra-r-txt1a">计算收益</p>	
+									<p class="tra-r-txt1b">投资当日即开始计算收益</p>
+								</div>
+							</div>
+							<div class="pur-tbi2">
+								<div class="tra-icon tra-icon3 fl"></div>
+								<div class="fl tra-r-txt1">
+									<p class="tra-r-txt1a">支持收益权转让</p>	
+									<p class="tra-r-txt1b">持有期间如急需资金可申请收益权转让，提前变现</p>
+								</div>
+							</div>
+							<div class="pur-tbi3">
+								<div class="tra-icon tra-icon4 fl"></div>
+								<div class="fl tra-r-txt1">
+									<p class="tra-r-txt1a">本息回款</p>	
+									<p class="tra-r-txt1b">2017-01-29本息回款至账户余额中</p>
+								</div>
+							</div>
+							<!--余额-->
+							<div class="pur-tbi4">
+								<div class="fl tra-r-txt1a">当前可用余额:<span>600000.00元</span></div>
+								<div class="ckmx-btno fr">
+									<a class="ckmx-btn" href="javascript:;">立即充值</a>
+								</div>
+							</div>
+						</div>	
+					</div>
+				</div>				
+			</div>
+			<!--保障-->
+			<div class="guarantee-o">
+				<div class="guarantee">
+					<span>资金由华兴银行存管</span>
+				</div>
+			</div>
+		
+			
+		</div>
+	</div>
+</body>
+<script>
+	document.addEventListener('touchstart',function(){},false);	
+	
+</script>
+<script>
+			
+	$(document).ready(function(){
+		var clientHeight = $("html")[0].clientHeight;
+    $(".pur-box").css("min-height",(clientHeight));
+　　})			
+</script>
+<script>
+	$(document).ready(function(){
+     $(window).scroll(function() {
+         var top = $(".pur-box").offset().top; //获取指定位置
+         var scrollTop = $(window).scrollTop();  //获取当前滑动位置
+         if(scrollTop > top){                 //滑动到该位置时执行代码
+           $(".pur-topo").addClass("show-scroll-top");
+         }else{
+           $(".pur-topo").removeClass("show-scroll-top");
+         }
+         });
+        });
+  
+</script>
+
+</html>

@@ -1,0 +1,72 @@
+body, div, h1, h2, h3, h4, h5, h6, p, blockquote, pre, dl, dt, dd, ol, ul, li, hr, fieldset, form, label, legend, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, summary, hgroup ,a{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-family: Verdana,"Microsoft YaHei", "SimHei", "SimSun";
+}
+*{ -webkit-tap-highlight-color: rgba(0,0,0,0);-webkit-tap-highlight-color: transparent; /* For some Androids */ }
+a {
+    -webkit-touch-callout: none;
+    -ms-touch-callout: none;
+    -moz-touch-callout: none;
+    -o-touch-callout: none;
+    touch-callout: none;
+}
+img {
+	/*max-width: 100%;*/
+	display: block;
+	border:0;
+	vertical-align:middle;
+}
+ul {
+	list-style:none;
+}
+html, body {
+	min-height: 100%;	
+}
+body {
+	font-family: Verdana;
+	-webkit-text-size-adjust: none;
+	background-color:#efefef;
+}
+a {
+	/*	*/
+	text-decoration:none;
+}
+a:active, a:hover {
+	outline: 0;
+}
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+.cb{clear:both;}
+
+
+.download-box{position:relative;width:6.4rem;height:11.38rem;background:url(../img/down-bg.jpg) no-repeat;background-size:100% auto;}
+.d-btn{font-size:0;}
+.d-txt1{font-size:0.36rem;color:#FFFFFF;font-family:arial;padding-left:0.3rem;padding-right:0.3rem;}
+.d-txt2{font-size:0.24rem;color:#FFFFFF;}
+.iphone i{display:inline-block;background:url(../img/iphone-ico.png) no-repeat;background-size:100% auto;width:0.32rem;height:0.4rem;}
+.iphone{line-height:0.73rem;text-align:center;width:3.37rem;height:0.73rem;border-radius:0.08rem;border:0.03rem solid #FFFFFF;display:block;position:absolute;left:50%;margin-left:-1.685rem;top:8.5rem;}
+.iphone:active .d-txt1,.iphone:active .d-txt2{color:#f04d4c;}
+.iphone:active{background:#FFFFFF;}
+.iphone:active i{background:url(../img/iphone-ico-a.png) no-repeat;background-size:100% auto;}
+
+.android i{display:inline-block;background:url(../img/android-ico.png) no-repeat;background-size:100% auto;width:0.34rem;height:0.4rem;}
+.android{line-height:0.73rem;text-align:center;width:3.37rem;height:0.73rem;border-radius:0.08rem;border:0.03rem solid #FFFFFF;display:block;position:absolute;left:50%;margin-left:-1.685rem;top:9.65rem;}
+.android:active .d-txt1,.iphone:active .d-txt2{color:#f04d4c;}
+.android:active{background:#FFFFFF;}
+.android:active i{background:url(../img/android-ico-a.png) no-repeat;background-size:100% auto;}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<title>教学点详情</title>
+	<script src="js/rem.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/common.css" />
+	<script src="js/zepto.min.js"></script>
+	<script src="js/touch.js"></script>
+	<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+	<style>
+		header .hllian{
+			position:absolute;
+			top:0.285rem;  
+			left:0.2rem; 
+			width:0.43rem;
+			height:0.43rem;
+			background:url(image/a9.png);
+			background-size:cover;
+		}
+		.sjx1,.sjx3{
+			width:0.28rem;
+			height:0.28rem;
+			background:url(image/a30.png);
+			background-size:cover;
+			margin-right:0.2rem;
+			display:inline-block;
+			
+		}
+		.sjx2,.sjx4{
+			width:0.28rem;
+			height:0.28rem;
+			background:url(image/a37.png);
+			background-size:cover;
+			margin-right:0.2rem;
+			display:inline-block;
+			 
+		}
+		.liang1{
+			width:0.6rem;
+			height:0.6rem;
+			border-radius:50%;
+			border:0.01rem solid #9ccd64;
+			background:#9ccd64;
+			color:#ffffff;
+			display:flex;
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;display: -o-flex;
+			align-items:center;
+			justify-content:center; 
+			font-size:0.24rem;
+			margin-bottom:0.15rem;
+		}
+		.liang2{
+			width:0.6rem;
+			height:0.6rem;
+			border-radius:50%;
+			border:0.01rem solid #999999;
+			background:#ffffff;
+			color:#999999;
+			display:flex;
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;display: -o-flex;
+			align-items:center;
+			justify-content:center; 
+			font-size:0.24rem;
+			margin-bottom:0.15rem; 
+		}
+	</style>
+</head>
+<body >
+	<!--头部-->
+	<header style="display:flex;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;justify-content: center;align-items:center;  ">
+		<a class="hllian" href="index.html"></a>
+		<span style="font-size:0.42rem;color:#333333;">南山南辅导中心</span>
+		<a style="position:absolute;right:0.2rem;top:0.3rem; "  href="javascript:history.go(-1)">
+			<img src="image/a28.png" style="width:0.28rem;height: 0.28rem; " />
+		</a>	
+	</header>
+	<!--教学点信息简介-->
+	<article style="border-top:0.01rem solid #ddd;padding:0.3rem 0.2rem;  ">
+		<section style="display:flex;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex; ">
+			<img src="image/lun4.jpg" style="width:2.22rem;height:1.65rem;margin-right:0.2rem;  " />
+			<div style="position: relative;top:0.1rem;">
+				<p style="font-size:0.3rem;color:#999999; margin-bottom:0.15rem;  ">
+					办学时间：<span style="color: #333333;margin-left:0.2rem;">2016-11-21</span>
+				</p>
+				<p style="font-size:0.3rem;color:#999999;margin-bottom:0.15rem;  ">
+					联系方式：<span style="color: #333333;margin-left:0.2rem;">13938897230</span>
+				</p>
+				<p style="font-size:0.3rem;color:#999999;margin-bottom:0.15rem;  ">
+					地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;址：<span style="color: #333333;margin-left:0.2rem; ">广东,广州,海珠区,聚德路17-51号2楼</span>
+				</p>
+			</div>
+		</section>
+		<section style="display:flex;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;margin-top:0.43rem;  ">
+			<div style="flex:1; ">
+				<p style="font-size:0.3rem;color:#999999;margin-bottom:0.25rem;display:flex;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;justify-content: center;align-items: center;  ">
+					课程总数
+				</p>
+				<p style="font-size:0.42rem;color:#333333;display:flex;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;justify-content: center;align-items: center; ">
+					18
+				</p>
+			</div>
+			<div style="flex:1; ">
+				<p style="font-size:0.3rem;color:#999999;margin-bottom:0.25rem;display:flex;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;justify-content: center;align-items: center; ">
+					教师总数
+				</p>
+				<p style="font-size:0.42rem;color:#333333;display:flex;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;justify-content: center;align-items: center; ">
+					180
+				</p>
+			</div>
+			<div style="flex:1; ">
+				<p style="font-size:0.3rem;color:#999999;margin-bottom:0.25rem;display:flex;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;justify-content: center;align-items: center; ">
+					好评率
+				</p>
+				<p style="font-size:0.42rem;color:#333333;display:flex;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;justify-content: center;align-items: center; ">
+					50%
+				</p>
+			</div>
+			<div style="flex:1; ">
+				<p style="font-size:0.3rem;color:#999999;margin-bottom:0.25rem;display:flex;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;justify-content: center;align-items: center; ">
+					访问总量
+				</p>
+				<p style="font-size:0.42rem;color:#333333;display:flex;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;justify-content: center;align-items: center; ">
+					1000
+				</p>
+			</div>
+		</section>
+	</article>
+	<!--开班信息-->
+	<article style="margin:0.2rem 0;width:100%;">
+		<section style="width:100%;height:0.6rem;background: #f0f0f0;display:flex;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;align-items:center;overflow:hidden;">
+			<div style="display:flex;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;justify-content:center;align-items: center; color:#333333;font-size:0.3rem;margin-left:0.2rem;float:left;    ">
+				<img src="image/a29.png" style="width:0.35rem;height:0.35rem;margin-right: 0.18rem;"/>
+				<span>开班信息</span>
+			</div>		
+		</section>
+		<section>
+			<a href="kechengxiang.html" style="margin:0.2rem;display:block;text-decoration: none;  ">
+				<div style="width: 7.1rem;height: 4.08rem;background:url(image/lun3.jpg);background-size:cover;"></div>
+				<div style="margin-top:0.2rem; ">
+					<p style="color: #666666;font-size:0.3rem;display:flex;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;justify-content: space-between;margin-bottom:0.24rem;   ">
+						招生对象：小学1-6年级
+						<span>
+							￥<span style="color: #ff8200;">5000</span>
+						</span>
+					</p>
+					<p style="color: #999999;font-size:0.3rem;">
+						辅导日期：<span style="color:#9ccd64; ">2014-10-30——2015-10-05</span>
+					</p>
+				</div>
+			</a>
+			<a href="kechengxiang.html" style="margin:0.2rem;display:block;text-decoration: none;  ">
+				<div style="width: 7.1rem;height: 4.08rem;background:url(image/lun3.jpg);background-size:cover;"></div>
+				<div style="margin-top:0.2rem; ">
+					<p style="color: #666666;font-size:0.3rem;display:flex;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;justify-content: space-between;margin-bottom:0.24rem;   ">
+						招生对象：小学1-6年级
+						<span>
+							￥<span style="color: #ff8200;">5000</span>
+						</span>
+					</p>
+					<p style="color: #999999;font-size:0.3rem;">
+						辅导日期：<span style="color:#9ccd64; ">2014-10-30——2015-10-05</span>
+					</p>
+				</div>
+			</a>
+		</section>
+		<section class="xin1" style="display:none; ">
+			<a href="kechengxiang.html" style="margin:0.2rem;display:block;text-decoration: none;  ">
+				<div style="width: 7.1rem;height: 4.08rem;background:url(image/lun3.jpg);background-size:cover;"></div>
+				<div style="margin-top:0.2rem; ">
+					<p style="color: #666666;font-size:0.3rem;display:flex;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;justify-content: space-between;margin-bottom:0.24rem;   ">
+						招生对象：小学1-6年级
+						<span>
+							￥<span style="color: #ff8200;">5000</span>
+						</span>
+					</p>
+					<p style="color: #999999;font-size:0.3rem;">
+						辅导日期：<span style="color:#9ccd64; ">2014-10-30——2015-10-05</span>
+					</p>
+				</div>
+			</a>
+			<a href="kechengxiang.html" style="margin:0.2rem;display:block;text-decoration: none;  ">
+				<div style="width: 7.1rem;height: 4.08rem;background:url(image/lun3.jpg);background-size:cover;"></div>
+				<div style="margin-top:0.2rem; ">
+					<p style="color: #666666;font-size:0.3rem;display:flex;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;justify-content: space-between;margin-bottom:0.24rem;   ">
+						招生对象：小学1-6年级
+						<span>
+							￥<span style="color: #ff8200;">5000</span>
+						</span>
+					</p>
+					<p style="color: #999999;font-size:0.3rem;">
+						辅导日期：<span style="color:#9ccd64; ">2014-10-30——2015-10-05</span>
+					</p>
+				</div>
+			</a>
+			<a href="kechengxiang.html" style="margin:0.2rem;display:block;text-decoration: none;  ">
+				<div style="width: 7.1rem;height: 4.08rem;background:url(image/lun3.jpg);background-size:cover;"></div>
+				<div style="margin-top:0.2rem; ">
+					<p style="color: #666666;font-size:0.3rem;display:flex;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;justify-content: space-between;margin-bottom:0.24rem;   ">
+						招生对象：小学1-6年级
+						<span>
+							￥<span style="color: #ff8200;">5000</span>
+						</span>
+					</p>
+					<p style="color: #999999;font-size:0.3rem;">
+						辅导日期：<span style="color:#9ccd64; ">2014-10-30——2015-10-05</span>
+					</p>
+				</div>
+			</a>
+			<a href="kechengxiang.html" style="margin:0.2rem;display:block;text-decoration: none;  ">
+				<div style="width: 7.1rem;height: 4.08rem;background:url(image/lun3.jpg);background-size:cover;"></div>
+				<div style="margin-top:0.2rem; ">
+					<p style="color: #666666;font-size:0.3rem;display:flex;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;justify-content: space-between;margin-bottom:0.24rem;   ">
+						招生对象：小学1-6年级
+						<span>
+							￥<span style="color: #ff8200;">5000</span>
+						</span>
+					</p>
+					<p style="color: #999999;font-size:0.3rem;">
+						辅导日期：<span style="color:#9ccd64; ">2014-10-30——2015-10-05</span>
+					</p>
+				</div>
+			</a>
+		</section>
+		<div style="margin:0.15rem auto 0 auto;height:0.8rem;text-align:center; line-height: 0.3rem;    " class="a1">
+			<div class="sjx1"></div>
+			<div style="font-size:0.3rem;color: #666666;display:inline-block;">查看全部课程</div>
+		</div>
+		<div style="margin:0.15rem auto 0 auto;height:0.8rem; text-align:center; line-height: 0.3rem;display:none;   " class="a2">
+			<div class="sjx2"></div>
+			<div style="font-size:0.3rem;color: #666666; display: inline-block; ">收起</div>
+		</div>
+		
+	</article>
+	<!--基本信息-->
+	<article style="margin-top:0.2rem;width:100%;">
+		<section style="width:100%;height:0.6rem;background: #f0f0f0;display:flex;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;align-items:center;overflow:hidden;">
+			<div style="display:flex;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;justify-content:center;align-items: center; color:#333333;font-size:0.3rem;margin-left:0.2rem;float:left;    ">
+				<img src="image/a31.png" style="width:0.28rem;height:0.28rem;margin-right: 0.18rem;"/>
+				<span>基本信息</span>
+			</div>		
+		</section>
+		<section style="margin:0.4rem 0.2rem 0 0.2rem; ">
+			<p style="font-size:0.3rem;color:#666666;margin-bottom:0.15rem;line-height:0.5rem;  ">
+				<span>辅导科目：</span><span>化学,物理,英语,数学,语文</span>
+			</p>
+			<p style="font-size:0.3rem;color:#666666;margin-bottom:0.15rem;line-height:0.5rem;  ">
+				<span>教学理念：</span><span>打造极致化教育服务</span>
+			</p>
+			<div style="font-size:0.3rem;color:#666666;line-height:0.5rem;   ">
+				<span>教学特色：</span>
+				<p style="font-size:0.3rem;color:#666666;line-height:0.5rem;position:relative;left:1.5rem;top:-0.5rem;width:5.5rem;  ">
+					全程数字化管理，以作业辅导和思维训练为核心，制定个性化教学方案，启发学生的自主学习能力。
+				</p>
+			</div>
+			<div style="font-size:0.3rem;color:#666666;line-height:0.5rem;position: relative;top:-0.3rem;   ">
+				<span>简&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;介：</span>
+				<p style="font-size:0.3rem;color:#666666;line-height:0.5rem;position:relative;left:1.5rem;top:-0.5rem;width:5.5rem;  ">
+					考拉社区课堂聚德花苑辅导中心教学点面积400多平方，有4间设施标准的英语化课室，一间魔爪营创意编程课室，并设有家长接待厅，网络监控等设施齐全，环境优雅，非常适宜学生学习。
+				</p>
+			</div>
+		</section>
+	</article>
+	<!--师资力量-->
+	<article style="margin:0.2rem 0;width:100%;">
+		<section style="width:100%;height:0.6rem;background: #f0f0f0;display:flex;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;align-items:center;overflow:hidden;">
+			<div style="display:flex;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;justify-content:center;align-items: center; color:#333333;font-size:0.3rem;margin-left:0.2rem;float:left;    ">
+				<img src="image/a32.png" style="width:0.35rem;height:0.31rem;margin-right: 0.18rem;"/>
+				<span>师资力量</span>
+			</div>		
+		</section>
+		<section>
+			<div style="margin:0.35rem 0.2rem 0.4rem 0.2rem;display:flex;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;position:relative;  ">
+				<div style="width: 1.5rem;height:1.5rem;background:url(image/a13.png);background-size:cover;margin-right:0.35rem;  "></div>
+				<div>
+					<p style="font-size:0.3rem;color:#999999;margin-bottom:0.15rem; ">
+						教&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;龄：<span style="font-size:0.24rem;color:#333333;">10年</span>
+					</p>
+					<p style="font-size:0.3rem;color:#999999;margin-bottom:0.15rem;">
+						辅导科目：<span style="font-size:0.24rem;color:#333333;">语文</span>
+					</p>
+					<p style="font-size:0.3rem;color:#999999;margin-bottom:0.15rem;">
+						教学特色：<span style="font-size:0.24rem;color:#333333;">因材施教认真负责热爱办学</span>
+					</p>
+					<p style="font-size:0.3rem;color:#999999;margin-bottom:0.15rem;">
+						教学经历：<span style="font-size:0.24rem;color:#333333;">毕业于黄冈师范学院；<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;广州考拉连续四届百优教师；<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;广州考拉宝安分校语文组长</span>
+					</p>
+				</div>
+				<span style="font-size:0.3rem;color:#666666;position:absolute;top:1.8rem; left:0.3rem;">李佳航</span>
+			</div>
+			<div style="margin:0.35rem 0.2rem 0.4rem 0.2rem;display:flex;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;position:relative;  ">
+				<div style="width: 1.5rem;height:1.5rem;background:url(image/a13.png);background-size:cover;margin-right:0.35rem;  "></div>
+				<div>
+					<p style="font-size:0.3rem;color:#999999;margin-bottom:0.15rem; ">
+						教&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;龄：<span style="font-size:0.24rem;color:#333333;">10年</span>
+					</p>
+					<p style="font-size:0.3rem;color:#999999;margin-bottom:0.15rem;">
+						辅导科目：<span style="font-size:0.24rem;color:#333333;">语文</span>
+					</p>
+					<p style="font-size:0.3rem;color:#999999;margin-bottom:0.15rem;">
+						教学特色：<span style="font-size:0.24rem;color:#333333;">因材施教认真负责热爱办学</span>
+					</p>
+					<p style="font-size:0.3rem;color:#999999;margin-bottom:0.15rem;">
+						教学经历：<span style="font-size:0.24rem;color:#333333;">毕业于黄冈师范学院；<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;广州考拉连续四届百优教师；<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;广州考拉宝安分校语文组长</span>
+					</p>
+				</div>
+				<span style="font-size:0.3rem;color:#666666;position:absolute;top:1.8rem; left:0.3rem;">李佳航</span>
+			</div>
+			
+			
+		</section>
+		<section class="xin2" style="display:none; ">
+			<div style="margin:0.35rem 0.2rem 0.4rem 0.2rem;display:flex;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;position:relative;  ">
+				<div style="width: 1.5rem;height:1.5rem;background:url(image/a13.png);background-size:cover;margin-right:0.35rem;  "></div>
+				<div>
+					<p style="font-size:0.3rem;color:#999999;margin-bottom:0.15rem; ">
+						教&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;龄：<span style="font-size:0.24rem;color:#333333;">10年</span>
+					</p>
+					<p style="font-size:0.3rem;color:#999999;margin-bottom:0.15rem;">
+						辅导科目：<span style="font-size:0.24rem;color:#333333;">语文</span>
+					</p>
+					<p style="font-size:0.3rem;color:#999999;margin-bottom:0.15rem;">
+						教学特色：<span style="font-size:0.24rem;color:#333333;">因材施教认真负责热爱办学</span>
+					</p>
+					<p style="font-size:0.3rem;color:#999999;margin-bottom:0.15rem;">
+						教学经历：<span style="font-size:0.24rem;color:#333333;">毕业于黄冈师范学院；<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;广州考拉连续四届百优教师；<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;广州考拉宝安分校语文组长</span>
+					</p>
+				</div>
+				<span style="font-size:0.3rem;color:#666666;position:absolute;top:1.8rem; left:0.3rem;">李佳航</span>
+			</div>
+			<div style="margin:0.35rem 0.2rem 0.4rem 0.2rem;display:flex;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;position:relative;  ">
+				<div style="width: 1.5rem;height:1.5rem;background:url(image/a13.png);background-size:cover;margin-right:0.35rem;  "></div>
+				<div>
+					<p style="font-size:0.3rem;color:#999999;margin-bottom:0.15rem; ">
+						教&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;龄：<span style="font-size:0.24rem;color:#333333;">10年</span>
+					</p>
+					<p style="font-size:0.3rem;color:#999999;margin-bottom:0.15rem;">
+						辅导科目：<span style="font-size:0.24rem;color:#333333;">语文</span>
+					</p>
+					<p style="font-size:0.3rem;color:#999999;margin-bottom:0.15rem;">
+						教学特色：<span style="font-size:0.24rem;color:#333333;">因材施教认真负责热爱办学</span>
+					</p>
+					<p style="font-size:0.3rem;color:#999999;margin-bottom:0.15rem;">
+						教学经历：<span style="font-size:0.24rem;color:#333333;">毕业于黄冈师范学院；<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;广州考拉连续四届百优教师；<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;广州考拉宝安分校语文组长</span>
+					</p>
+				</div>
+				<span style="font-size:0.3rem;color:#666666;position:absolute;top:1.8rem; left:0.3rem;">李佳航</span>
+			</div>
+			<div style="margin:0.35rem 0.2rem 0.4rem 0.2rem;display:flex;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;position:relative;  ">
+				<div style="width: 1.5rem;height:1.5rem;background:url(image/a13.png);background-size:cover;margin-right:0.35rem;  "></div>
+				<div>
+					<p style="font-size:0.3rem;color:#999999;margin-bottom:0.15rem; ">
+						教&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;龄：<span style="font-size:0.24rem;color:#333333;">10年</span>
+					</p>
+					<p style="font-size:0.3rem;color:#999999;margin-bottom:0.15rem;">
+						辅导科目：<span style="font-size:0.24rem;color:#333333;">语文</span>
+					</p>
+					<p style="font-size:0.3rem;color:#999999;margin-bottom:0.15rem;">
+						教学特色：<span style="font-size:0.24rem;color:#333333;">因材施教认真负责热爱办学</span>
+					</p>
+					<p style="font-size:0.3rem;color:#999999;margin-bottom:0.15rem;">
+						教学经历：<span style="font-size:0.24rem;color:#333333;">毕业于黄冈师范学院；<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;广州考拉连续四届百优教师；<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;广州考拉宝安分校语文组长</span>
+					</p>
+				</div>
+				<span style="font-size:0.3rem;color:#666666;position:absolute;top:1.8rem; left:0.3rem;">李佳航</span>
+			</div>
+			<div style="margin:0.35rem 0.2rem 0.4rem 0.2rem;display:flex;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;position:relative;  ">
+				<div style="width: 1.5rem;height:1.5rem;background:url(image/a13.png);background-size:cover;margin-right:0.35rem;  "></div>
+				<div>
+					<p style="font-size:0.3rem;color:#999999;margin-bottom:0.15rem; ">
+						教&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;龄：<span style="font-size:0.24rem;color:#333333;">10年</span>
+					</p>
+					<p style="font-size:0.3rem;color:#999999;margin-bottom:0.15rem;">
+						辅导科目：<span style="font-size:0.24rem;color:#333333;">语文</span>
+					</p>
+					<p style="font-size:0.3rem;color:#999999;margin-bottom:0.15rem;">
+						教学特色：<span style="font-size:0.24rem;color:#333333;">因材施教认真负责热爱办学</span>
+					</p>
+					<p style="font-size:0.3rem;color:#999999;margin-bottom:0.15rem;">
+						教学经历：<span style="font-size:0.24rem;color:#333333;">毕业于黄冈师范学院；<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;广州考拉连续四届百优教师；<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;广州考拉宝安分校语文组长</span>
+					</p>
+				</div>
+				<span style="font-size:0.3rem;color:#666666;position:absolute;top:1.8rem; left:0.3rem;">李佳航</span>
+			</div>
+			
+		</section>
+		<div style="margin:0.15rem auto 0 auto;height:0.8rem; text-align:center; line-height: 0.3rem;    " class="a3">
+			<div class="sjx1"></div>
+			<div style="font-size:0.3rem;color: #666666;display:inline-block; ">查看全部教师</div>
+		</div>
+		<div style="margin:0.15rem auto 0 auto;height:0.8rem; text-align:center; line-height: 0.3rem;display:none;   " class="a4">
+			<div class="sjx2"></div>
+			<div style="font-size:0.3rem;color: #666666;display: inline-block;  ">收起</div>
+		</div>
+	</article>
+	<!--授课时间-->
+	<article style="margin:0.2rem 0;width:100%;">
+		<section style="width:100%;height:0.6rem;background: #f0f0f0;display:flex;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;align-items:center;overflow:hidden;">
+			<div style="display:flex;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;justify-content:center;align-items: center; color:#333333;font-size:0.3rem;margin-left:0.2rem;float:left;    ">
+				<img src="image/a20.png" style="width:0.35rem;height:0.31rem;margin-right: 0.18rem;"/>
+				<span>授课时间</span>
+			</div>		
+		</section>
+		<section style="margin:0 0.2rem 0.2rem 0.2rem; ">
+			<div style="font-size:0.3rem;color:#666666;display:flex;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;background:#f9f9f6;height: 0.76rem;align-items:center;     ">
+				<span style="flex:1;">周一</span>
+				<span style="flex:1;">周二</span>
+				<span style="flex:1; ">周三</span>
+				<span style="flex:1;">周四</span>
+				<span style="flex:1;">周五</span>
+				<span style="flex:1; ">周六</span>
+				<span >周日</span>
+			</div>
+			<div style="margin:0.22rem 0 0.3rem 0;display:flex;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;  ">
+				<div style="flex:1; ">
+					<span class="liang2">上午
+					</span>
+					<span class="liang2">下午
+					</span>
+					<span class="liang1">晚上
+					</span>
+				</div>
+				<div style="flex:1;">
+					<span class="liang2">上午
+					</span>
+					<span class="liang1">下午
+					</span>
+					<span class="liang1">晚上
+					</span>
+				</div>
+				<div style="flex:1;position:relative;left:1%; ">
+					<span class="liang2">上午
+					</span>
+					<span class="liang2">下午
+					</span>
+					<span class="liang1">晚上
+					</span>
+				</div>
+				<div style="flex:1;position:relative;left:2%; ">
+					<span class="liang2">上午
+					</span>
+					<span class="liang1">下午
+					</span>
+					<span class="liang1">晚上
+					</span>
+				</div>
+				<div style="flex:1;position:relative;left:3%;">
+					<span class="liang1">上午
+					</span>
+					<span class="liang2">下午
+					</span>
+					<span class="liang1">晚上
+					</span>
+				</div>
+				<div style="flex:1;position:relative;left:5%;">
+					<span class="liang2">上午
+					</span>
+					<span class="liang1">下午
+					</span>
+					<span class="liang2">晚上
+					</span>
+				</div>
+				<div style="flex:1;position:relative;left:6%;">
+					<span class="liang1">上午
+					</span>
+					<span class="liang2">下午
+					</span>
+					<span class="liang1">晚上
+					</span>
+				</div>
+			</div>
+		</section>
+		
+	</article>
+	<!--教学地点-->
+	<article style="margin:0.2rem 0;width:100%;">
+		<section style="width:100%;height:0.6rem;background: #f0f0f0;display:flex;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;align-items:center;overflow:hidden;">
+			<div style="display:flex;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;justify-content:center;align-items: center; color:#333333;font-size:0.3rem;margin-left:0.2rem;float:left;    ">
+				<img src="image/a33.png" style="width:0.26rem;height:0.32rem;margin-right: 0.18rem;"/>
+				<span>教学地点</span>
+			</div>		
+		</section>
+		<!--百度地图容器-->
+  		<div style="width:100%;height:6.52rem;margin-bottom:0.6rem; " id="dituContent"></div>		
+	</article>
+	<!--底部-->
+	<footer style="font-size: 0.24rem;color:#5b5b5b;display: flex;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;justify-content: center;align-items: center;   ">
+		<p>
+			&copy;&nbsp;2016&nbsp;&nbsp;&nbsp;深圳市考拉超课科技股份有限公司版权所有	
+		</p>
+	</footer>
+	<script type="text/javascript">
+		//创建和初始化地图函数：
+		function initMap(){
+		    createMap();//创建地图
+		    setMapEvent();//设置地图事件
+		    addMapControl();//向地图添加控件
+		}
+
+		//创建地图函数：
+		function createMap(){
+		    var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+		    var point = new BMap.Point(113.942876,22.529185);//定义一个中心点坐标
+		    map.centerAndZoom(point,17);//设定地图的中心点和坐标并将地图显示在地图容器中
+		    window.map = map;//将map变量存储在全局
+		}
+
+		//地图事件设置函数：
+		function setMapEvent(){
+		    map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+		    map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+		    map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+		    map.enableKeyboard();//启用键盘上下左右键移动地图
+		}
+
+		//地图控件添加函数：
+		function addMapControl(){
+		    //向地图中添加缩放控件
+		var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+		map.addControl(ctrl_nav);
+		    //向地图中添加缩略图控件
+		var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:0});
+		map.addControl(ctrl_ove);
+		    //向地图中添加比例尺控件
+		var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+		map.addControl(ctrl_sca);
+		}
+
+
+		initMap();//创建和初始化地图
+</script>
+	<script type="text/javascript">
+		$(function(){
+			var gunji1=0;
+			var gunji2=0;
+			$(".a1").on("tap",function(){
+				$(".a1").hide();
+				$(".xin1").show();
+				$(".a2").show();
+				gunji1=$(window).scrollTop();
+		    });	
+			$(".a2").on("tap",function(){
+				$(".a2").hide();
+				$(".xin1").hide();
+				$(".a1").show();
+				$(window).scrollTop(gunji1);
+		    });	
+		    $(".a3").on("tap",function(){
+				$(".a3").hide();
+				$(".xin2").show();
+				$(".a4").show();
+				gunji2=$(window).scrollTop();
+		    });	
+			$(".a4").on("tap",function(){
+				$(".a4").hide();
+				$(".xin2").hide();
+				$(".a3").show();
+				$(window).scrollTop(gunji2);
+		    });		
+		});
+	</script>
+</body>
+</html>

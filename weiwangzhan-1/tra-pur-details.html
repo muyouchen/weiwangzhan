@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<script type="text/javascript" src="js/setviewport1080.js" ></script>
+	<script type="text/javascript" src="js/jquery-1.11.1.min.js" ></script>
+	<link rel="stylesheet" href="css/head&bottom.css" />
+	<link rel="stylesheet" href="css/tra-pur-details.css" />
+	<title>转让专区购买详情</title>
+</head>
+<body>
+	<div class="trap-into-box">
+		<div class="trap-i-top">
+			<div class="trap-i-topi">
+				<a href="javascript:;" class="return-icon-w"></a>	
+				<span>转让第50期</span>
+			</div>	
+			<div class="trap-i-topi2">
+				<div class="fl trap-i-txt1">
+					<div class="trap-i-txt1a">
+						<span class="trap-i-txt2a">10.50<span class="trap-i-txt2b">%</span></span>	
+						<span class="trap-txt1">+10.00%</span>
+					</div>
+					<span  class="trap-i-txt1b">预期年化收益率</span>
+				</div>	
+				<div class="fl trap-i-txt2">
+					<div class="trap-i-txt2-i">
+						<span class="trap-i-txt2a">100</span>
+						<span class="trap-i-txt2b">天</span>
+					</div>
+					<span  class="trap-i-txt2c">剩余期限</span>
+				</div>	
+				<div class="fr trap-i-txt3">
+					<div class="trap-i-txt2-i">
+						<span class="trap-i-txt2a">999999</span>
+						<span class="trap-i-txt2b">元</span>
+					</div>
+					<span  class="trap-i-txt2c">转让金额</span>
+				</div>	
+			</div>
+		</div>		
+		<div class="trap-i-mo">
+			<div class="trap-i-m">
+				<ul class="trap-i-mul">
+					<li>
+						<span class="trap-i-mtxt1a fl">购买金额</span>
+						<span class="trap-i-mtxt1b fr">10000.00元</span>
+					</li>
+					<li>
+						<span class="trap-i-mtxt1a fl">回款金额</span>
+						<span class="trap-i-mtxt1b fr">10240.00元</span>
+					</li>
+					<li>
+						<span class="trap-i-mtxt1a fl">回款时间</span>
+						<span class="trap-i-mtxt1b fr">2017-01-21</span>
+					</li>
+				</ul>
+			</div>	
+		</div>
+		
+		<!--查看转让记录-->
+		<a href="javascript:;" class="ord-mo2">
+			<div class="ord-m2">
+				<span class="fl ord-m2-txt1">查看转让记录</span>
+				<i class="w-cs-left-g fr"></i>
+			</div>	
+		</a>
+		
+		<!--查看转让记录-->
+		<a href="javascript:;" class="ord-mo2">
+			<div class="ord-m2">
+				<span class="fl ord-m2-txt1">查看原始标的详情</span>
+				<i class="w-cs-left-g fr"></i>
+			</div>	
+		</a>
+		<!--余额不足 加 not-enough-->
+		<div class="trap-i-mo not-enough">
+			<div class="trap-i-m">
+				<ul class="trap-i-mul">				
+					<li class="trap-i-payc">
+						<span class="trap-i-mtxt1a fl">账户余额</span>												
+						<span class="trap-i-mtxt1b yezg-txt fr">250000.00元</span>
+						<a href="javascript:;" class="yebz-txt fr">
+							余额不足，去充值
+							<i class="w-cs-left-g"></i>
+						</a>
+					</li>					
+				</ul>
+			</div>	
+		</div>
+		
+		<!--按钮  已转让 加 been-tra-->
+		<div class="trap-i-btno">
+			<div class="xq-agreement">
+				点击“立即抢购”即代表同意
+				<a href="javascript:;">《易转宝转让协议》</a>
+			</div>
+			<a class="trap-i-btn" href="javascript:;">立即购买</a>	
+			<a class="trap-i-zrbtn" href="javascript:;">已转让</a>	
+		</div>
+	</div>
+</body>
+<script>
+	document.addEventListener('touchstart',function(){},false);		
+</script>
+<script>
+			
+	$(document).ready(function(){
+		var clientHeight = $("html")[0].clientHeight;
+    $(".trap-into-box").css("min-height",(clientHeight));
+　　})			
+</script>
+<script>
+	$(document).ready(function(){
+     $(window).scroll(function() {
+         var top = $(".trap-into-box").offset().top; //获取指定位置
+         var scrollTop = $(window).scrollTop();  //获取当前滑动位置
+         if(scrollTop > top){                 //滑动到该位置时执行代码
+           $(".trap-i-top").addClass("show-scroll-top");
+         }else{
+           $(".trap-i-top").removeClass("show-scroll-top");
+         }
+         });
+        });
+        
+</script>
+
+</html>

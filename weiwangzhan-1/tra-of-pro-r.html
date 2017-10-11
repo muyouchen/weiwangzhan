@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<script type="text/javascript" src="js/setviewport1080.js" ></script>
+	<script type="text/javascript" src="js/jquery-1.11.1.min.js" ></script>
+	<link rel="stylesheet" href="css/head&bottom-d.css" />
+	<link rel="stylesheet" href="css/tra-of-pro-r.css" />
+	<title>申请收益权转让结果</title>
+</head>
+<body>	
+	<div class="tra-o-box">
+		<div class="tra-o-boxi">
+			<!--头部  显示隐藏头部 show-scroll-top-->			
+			<div class="tra-o-topo">				
+				<div class="tra-o-top">
+					<div class="tra-o-top1">
+						<a href="javascript:;" class="return-icon-w"></a>	
+						<span>申请收益权转让结果</span>						
+					</div>				
+					<div class="tra-o-tbo">
+						<div class="tra-o-tb">
+							<div class="tra-o-tbi">
+								<div class="tra-icon tra-icon1 fl"></div>
+								<div class="fl tra-r-txt1">
+									<p class="tra-r-txt1a">转让申请已提交</p>	
+									<p class="tra-r-txt1b">今天09:20:22</p>
+								</div>
+							</div>
+							<div class="tra-o-tbi2">
+								<div class="tra-icon tra-icon2 fl"></div>
+								<div class="fl tra-r-txt1">
+									<p class="tra-r-txt1a">平台审核</p>	
+									<p class="tra-r-txt1b">审核通过后将发布到转让专区</p>
+								</div>
+							</div>
+							<div class="tra-o-tbi2">
+								<div class="tra-icon tra-icon3 fl"></div>
+								<div class="fl tra-r-txt1">
+									<p class="tra-r-txt1a">成功转让</p>	
+									<p class="tra-r-txt1b">受让人购买转让项目</p>
+								</div>
+							</div>
+							<div class="tra-o-tbi3">
+								<div class="tra-icon tra-icon4 fl"></div>
+								<div class="fl tra-r-txt1">
+									<p class="tra-r-txt1a">回款</p>	
+									<p class="tra-r-txt1b">回款至账户余额中</p>
+								</div>
+							</div>
+						</div>	
+					</div>
+				</div>				
+			</div>
+			<!--保障-->
+			<div class="guarantee-o">
+				<div class="guarantee">
+					<span>资金由华兴银行存管</span>
+				</div>
+			</div>
+		
+			
+		</div>
+	</div>
+</body>
+<script>
+	document.addEventListener('touchstart',function(){},false);	
+	
+</script>
+<script>
+			
+	$(document).ready(function(){
+		var clientHeight = $("html")[0].clientHeight;
+    $(".tra-o-box").css("min-height",(clientHeight));
+　　})			
+</script>
+<script>
+	$(document).ready(function(){
+     $(window).scroll(function() {
+         var top = $(".tra-o-box").offset().top; //获取指定位置
+         var scrollTop = $(window).scrollTop();  //获取当前滑动位置
+         if(scrollTop > top){                 //滑动到该位置时执行代码
+           $(".tra-o-topo").addClass("show-scroll-top");
+         }else{
+           $(".tra-o-topo").removeClass("show-scroll-top");
+         }
+         });
+        });
+  
+</script>
+
+</html>

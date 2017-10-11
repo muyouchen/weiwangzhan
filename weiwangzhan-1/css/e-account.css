@@ -1,0 +1,32 @@
+.bk-c-mgbox{width:100%;position:relative;}
+/*头部*/
+.title2-1080{box-shadow: 0rem 0.15rem 0.8rem rgba(109,98,97,0.2);position:relative;border-bottom:1px solid #e7e3e0;width:10.80rem;height:1.44rem;background-color:#fcfcfc;text-align:center;color:#6d6261;font-size:0.46rem;line-height:1.44rem;}
+.title2-1080 .title_left1080{position:absolute;left:0.44rem;right:auto;}
+.title_left1080 img{width:0.24rem;height:0.44rem;}
+/*银行卡*/
+.bk-co{}
+.bk-c{width:10.20rem;margin:0 auto;}
+.bk-ci{position:relative;display:block;margin-bottom:0.45rem;width:10.20rem;height:3.32rem;border-radius:0.2rem;color:#FFFFFF;font-size:0;}
+.red-bkc{background-image:linear-gradient(60deg,#e94e4d,#ff7661);
+		background-image:-webkit-linear-gradient(60deg,#e94e4d,#ff7661);
+		box-shadow: 0rem 0.15rem 0.8rem rgba(233,78,77,0.4);
+}
+.bkc-icon img{width:1.12rem;height:0.92rem;}
+.bkc-icon{padding:0.49rem 0.45rem 0 0.45rem;}
+.bkc-txt{font-size:0.5rem;padding-top:0.45rem;width:7.75rem;}
+.bkc-txt1{font-size:0.38rem;clear:both;padding-left:2.02rem;}
+
+.orange-bkc{background-image:linear-gradient(60deg,#ff7d5f,#ffbf59);
+		background-image:-webkit-linear-gradient(60deg,#ff7d5f,#ffbf59);
+		box-shadow: 0rem 0.15rem 0.8rem rgba(255,125,95,0.4);
+}
+
+
+
+.bkc-txt2{font-size:0.5rem;overflow:hidden;padding-top:0.4rem;}
+.bkc-txt2a{float:left;padding-left:2.02rem;}
+.bkc-txt2b{float:right;padding-right:0.45rem;}
+.w-cs-left-w{display:inline-block;width:0.24rem;height:0.44rem;background:url(../img/w-cs-left-w.png) no-repeat;background-size:100% auto;vertical-align:middle;}
+.e-accounttxt1{padding:0.9rem 0 0.6rem 0.75rem;font-size:0.5rem;color:#3a3434;}
+.e-accounttxt2{font-size:0.38rem;color:#6d6161;text-align:center;padding-top:0.6rem;}
+.e-accounttxt2 span{color:#ff9630;}

@@ -1,0 +1,92 @@
+.ord-box{width:100%;position:relative;background:#F7F7F2;}
+/*.scroll-top{display:none;position:fixed;top:0;width:100%;height:1.46rem;z-index:100;}*/
+.ord-topo{height:4.6rem;background:#FFFFFF;}
+.ord-top{width:100%;height:3.52rem;
+	    background-image:linear-gradient(60deg,#fc5249,#f55158);
+		background-image:-webkit-linear-gradient(60deg,#fc5249,#f55158);		
+}
+.ord-top1{position:absolute;left:0;top:0;width:100%;height:1.46rem;line-height:1.46rem;color:#FFFFFF;font-size:0.46rem;text-align:center;}
+.return-icon-w{position:absolute;top:0.559rem;left:0.3rem;width:0.28rem;height:0.48rem;background:url(../img/w-cs-right-w.png) no-repeat;background-size:100% auto;display:block;}
+.ord-top2{box-shadow: 0rem 0.15rem 0.8rem rgba(109,98,97,0.2);position:relative;width:100%;height:1.46rem;line-height:1.46rem;color:#6d6161;font-size:0.46rem;text-align:center;}
+.show-scroll-top .return-icon-w{background:url(../img/bk-c-return-g.png) no-repeat;background-size:100% auto;}
+.show-scroll-top .ord-top1{
+	color:#6d6161;
+	position:fixed;top:0;width:100%;height:1.46rem;z-index:100;
+	-webkit-animation-name: "bgw"; 
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: 1;
+	background:#FFFFFF;
+	box-shadow: 0rem 0.15rem 0.8rem rgba(109,98,97,0.2);
+}
+
+@-webkit-keyframes bgw{
+		0% {
+					opacity: 0;
+					-webkit-transform: translateY(-1.46rem);
+					background:#FFFFFF;
+				}	
+		100% {
+			opacity:1;
+			-webkit-transform: translateY(0rem);
+			background:#FFFFFF;
+		}
+	}
+.ord-tb{clear:both;}
+
+.ord-btno{font-size:0;position:fixed;bottom:0;width:100%;height:2.57rem;}
+.wmb-btn{box-shadow: 0rem 0rem 0.8rem rgba(242,238,235,0.4);font-size:0.5rem;position:absolute;bottom:0;color:#b3adad;text-align:center;width:100%;height:1.6rem;line-height:1.6rem;background:#f2eeeb;display:block;}
+
+
+.ord-tb{width:10.20rem;height:2.89rem;background:#FFFFFF;border-radius:0.2rem;position:absolute;top:1.65rem;left:50%;margin-left:-5.1rem;
+		box-shadow: 0rem 0.15rem 0.8rem rgba(109,98,97,0.2);
+}
+.ord-txt1{overflow:hidden;width:9.6rem;margin:0 auto;padding:0.34rem 0;border-bottom:2px solid #F7F6F2;}
+.ord-txt1a{font-size:0.5rem;color:#3a3434;}
+.ord-txt1b{font-size:0.5rem;color:#b3adad;}
+.ord-txt2a{font-size:0;width:3.2rem;text-align:center;padding-top:0.22rem;}
+.ord-txt2a1{color:#e94d4e;font-size:0.5rem;}
+.ord-txt2a2{color:#6d6161;font-size:0.38rem;}
+.ord-txt2{overflow:hidden;width:9.6rem;margin:0 auto;}
+/*线*/
+.xq-line1{width:100%;height:0.2rem;background:#f7f6f2;display:block;}
+
+/*投资详情*/
+.ord-mo{width:100%;background:#FFFFFF;}
+.ord-m{width:9.5rem;margin:0 auto;}
+.ord-m-txt1{font-size:0.5rem;color:#3a3434;padding:0.6rem 0.65rem;}
+.ord-m-txt2{overflow:hidden;padding-bottom:0.6rem;}
+.ord-m-txt2a{font-size:0.38rem;color:#6d6161;}
+.ord-m-txt2b{font-size:0.38rem;color:#3a3434;}
+.ord-m-txt2 a{display:block;overflow:hidden;}
+.ord-m-txt2b2{color:#e94d4e;}
+.ord-mo2{background:#FFFFFF;width:100%;height:1.37rem;display:block;line-height:1.37rem;}
+
+.ord-m2{width:9.5rem;margin:0 auto;}
+.w-cs-left-g{margin-top:0.46rem;width:0.24rem;height:0.44rem;display:inline-block;background:url(../img/w-cs-left-g.png) no-repeat;background-size:100% auto;}
+.ord-m2-txt1{font-size:0.5rem;color:#6d6161;}
+.ord-boxi{padding-bottom:2.57rem;}
+/*满标*/
+.ord-fulltxt1,.full-scale .bidding-txt1,.full-scale .wmb-btn{display:none;}
+.full-scale .ord-fulltxt1,.full-scale .sqzr-btn{display:block;}
+.sqzr-btn{box-shadow: 0rem 0rem 0.8rem rgba(233,77,78,0.4);font-size:0.5rem;position:absolute;bottom:0;color:#FFFFFF;text-align:center;width:100%;height:1.6rem;line-height:1.6rem;background:#e94d4e;display:none;}
+/*转让在投中*/
+.tra-txt1,.tra-in-hit .bidding-txt1,.tra-in-hit .wmb-btn,.tra-in-hit .bidding-txt2,.tra-in-hit .bidding-txt0{display:none;}
+.tra-in-hit .tra-txt1,.tra-in-hit .sqzr-btn,.tra-in-hit .tra-txt3{display:block;}
+.tra-txt2b{font-size:0.38rem;}
+.tra-txt3{display:none;}
+.tra-txt2{display:none;}
+.tra-in-hit .tra-txt2{display:block;}
+
+.ord-m-txt2b1{padding-right:0.1rem;}
+/*转让中*/
+.tra-in-txt1,.tra-in .bidding-txt1,.tra-in .wmb-btn{display:none;}
+.tra-in .tra-in-txt1,.tra-in .cxzr-btn{display:block;}
+.cxzr-btn{box-shadow: 0rem 0rem 0.8rem rgba(233,77,78,0.4);font-size:0.5rem;position:absolute;bottom:0;color:#FFFFFF;text-align:center;width:100%;height:1.6rem;line-height:1.6rem;background:#e94d4e;display:none;}
+
+/*转让已回款*/
+.tra-pay-txt1,.tra-pay .bidding-txt1,.tra-pay .bidding-txt0,.tra-pay .bidding-txt2{display:none;}
+.tra-pay .tra-pay-txt1,.tra-pay .tra-txt3,.tra-pay .tra-txt2,.tra-pay .tra-pay-btn{display:block;}
+.tra-pay-btn{box-shadow: 0rem 0rem 0.8rem rgba(242,238,235,0.4);font-size:0.5rem;position:absolute;bottom:0;color:#b3adad;text-align:center;width:100%;height:1.6rem;line-height:1.6rem;background:#f2eeeb;display:none;}
+
+
+

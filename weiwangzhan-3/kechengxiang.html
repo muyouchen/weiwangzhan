@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<title>课程详情</title>
+	<script src="js/rem.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/swiper-3.4.0.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/common.css" />
+	<script src="js/zepto.min.js"></script>
+	<script src="js/touch.js"></script>
+	<script type="text/javascript" src="js/swiper-3.4.0.jquery.min.js"></script>
+	<style>
+		header .hllian{
+			position:absolute;
+			top:0.285rem;  
+			left:0.2rem; 
+			width:0.43rem;
+			height:0.43rem;
+			background:url(image/a9.png);
+			background-size:cover;
+		}
+		.sjx1{
+			width:0.28rem;
+			height:0.28rem;
+			background:url(image/a30.png);
+			background-size:cover;
+			margin-right:0.2rem; 
+		}
+		.alertBox{
+			z-index:2000; 
+			width: 100%;
+			height: 100%;
+			background: rgba(0,0,0,.5);
+			position:fixed;
+			left: 0;
+			top: 0;
+			display:flex;
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;display: -o-flex;
+			justify-content:center;
+			align-items: center; 			
+		}
+		.alertBoxs{
+			width: 7rem;
+			height: 7.15rem;
+			z-index:2500; 
+			background: #fff;
+			position:relative; 
+			box-sizing:border-box;
+			border:0.08rem solid rgba(0,0,0,0.7);
+		}
+
+		.closeAlertBox {
+			width:0.4rem;
+			height:0.4rem;
+			background:url(image/a36.png);
+			background-size:cover;  
+			position:absolute;
+			z-index:3000; 
+			right:0;   
+		}
+		.ceng{
+			display: none; 
+			position: absolute; 
+			top: 0%; 
+			left: 0%; 
+			width: 100%; 
+			height: 100%; 
+			background-color: black; 
+			z-index:1500; 
+			-moz-opacity: 0.1; 
+			opacity:.10; 
+			filter: alpha(opacity=10);
+		}
+		ul,li{
+			list-style:none;
+			margin:0;
+			padding:0; 
+			  
+		}
+	</style>
+</head>
+<body >
+	<!--头部-->
+	<header style="display:flex;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;justify-content: center;align-items:center;  ">
+		<a class="hllian" href="index.html"></a>
+		<span style="font-size:0.42rem;color:#333333;">初中概念培优班</span>
+		<a style="position:absolute;right:0.2rem;top:0.3rem; "  href="javascript:history.go(-1)">
+			<img src="image/a28.png" style="width:0.28rem;height: 0.28rem; " />
+		</a>	
+	</header>
+	<!--课程信息-->
+	<article>
+		<section style="width:100%;height:4.32rem;background:url(image/lun3.jpg);background-size:cover; "></section>
+		<section style="font-size:0.3rem;color: #999999;margin:0.35rem 0.2rem 0 0.2rem;  ">
+			<p style="line-height:0.6rem; ">
+				<span>价格：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #ff8200;">￥4200</span>
+			</p>
+			<p style="line-height:0.6rem; ">
+				<span>辅导老师：&nbsp;&nbsp;&nbsp;</span><span style="color: #333333;">陈晨老师</span>
+			</p>
+			<p style="line-height:0.6rem; ">
+				<span>辅导科目：&nbsp;&nbsp;&nbsp;</span><span style="color: #333333;">语文</span>
+			</p>
+			<p style="line-height:0.6rem; ">
+				<span>招生人数：&nbsp;&nbsp;&nbsp;</span><span style="color: #333333;">200</span>
+			</p>
+			<p style="line-height:0.6rem; ">
+				<span>预报名人数：</span><span style="color: #333333;">200</span>
+			</p>
+			<p style="line-height:0.6rem; ">
+				<span>课时安排：&nbsp;&nbsp;&nbsp;</span><span style="color: #333333;">30</span><span style="color: #333333;">节课</span>
+			</p>
+			<div style="font-size:0.24rem; margin-top:0.2rem; 
+ " class="snian">
+				<span style="font-size:0.3rem;  ">年级：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+				<div style="position:relative;top:-0.35rem;left:1.8rem;width:80%;  ">
+					<span style="display:inline-block;padding:0.04rem 0.1rem;border:0.01rem solid #00c435;color:#00c435;margin-right:0.4rem;margin-bottom:0.25rem;       " class="sji">七年级</span>
+					<span style="display:inline-block;padding:0.04rem 0.1rem;border:0.01rem solid #999999;color:#333333;margin-right:0.4rem;margin-bottom:0.25rem;      " class="sji">八年级</span>
+					<span style="display:inline-block;padding:0.04rem 0.1rem;border:0.01rem solid #999999;color:#333333;margin-right:0.4rem;margin-bottom:0.25rem;      " class="sji">八年级</span>
+					<span style="display:inline-block;padding:0.04rem 0.1rem;border:0.01rem solid #999999;color:#333333;margin-right:0.4rem;margin-bottom:0.25rem;      " class="sji">八年级</span>
+					<span style="display:inline-block;padding:0.04rem 0.1rem;border:0.01rem solid #999999;color:#333333;margin-right:0.4rem;margin-bottom:0.25rem;      " class="sji">八年级</span>
+					<span style="display:inline-block;padding:0.04rem 0.1rem;border:0.01rem solid #999999;color:#333333;margin-right:0.4rem;margin-bottom:0.25rem;      " class="sji">八年级</span>
+					<span style="display:inline-block;padding:0.04rem 0.1rem;border:0.01rem solid #999999;color:#333333;margin-right:0.4rem;margin-bottom:0.25rem;      " class="sji">八年级</span>
+					<span style="display:inline-block;padding:0.04rem 0.1rem;border:0.01rem solid #999999;color:#333333;margin-right:0.4rem;margin-bottom:0.25rem;      " class="sji">初中一年级</span>
+					<span style="display:inline-block;padding:0.04rem 0.1rem;border:0.01rem solid #999999;color:#333333;margin-right:0.4rem;margin-bottom:0.25rem;      " class="sji">初中一年级</span>
+					<span style="display:inline-block;padding:0.04rem 0.1rem;border:0.01rem solid #999999;color:#333333;margin-right:0.4rem;margin-bottom:0.25rem;      " class="sji">初中一年级</span>
+					<span style="display:inline-block;padding:0.04rem 0.1rem;border:0.01rem solid #999999;color:#333333;margin-right:0.4rem;margin-bottom:0.25rem;      " class="sji">初中一年级</span>
+				</div>
+			</div>
+			<div style="color:#666666; margin-bottom: 0.6rem;">
+				<span style="color: #999999; ">校区：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+				<select style="outline:none;width:4.76rem;height:0.52rem;border:0.01rem solid #999999;   ">
+					<option >聚德花苑辅导中心</option>
+					<option >深圳市南山区</option>
+					<option >广东省深圳市</option>
+					<option >广东省广州市</option>
+				</select>
+			</div>
+		</section>
+	</article>
+	<!--课程介绍-->
+	<article style="margin:0.2rem 0;width:100%;">
+		<section style="width:100%;height:0.6rem;background: #f0f0f0;display:flex;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;align-items:center;overflow:hidden;">
+			<div style="display:flex;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;justify-content:center;align-items: center; color:#333333;font-size:0.3rem;margin-left:0.2rem;float:left;    ">
+				<img src="image/a34.png" style="width:0.34rem;height:0.26rem;margin-right: 0.18rem;position:relative;top:0.02rem; "/>
+				<span>课程介绍</span>
+			</div>		
+		</section>
+		<div style="margin:0.33rem 0.2rem 0 0.2rem; ">
+			<p style="font-size: 0.3rem;color: #333333;line-height:0.5rem; ">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc.
+			</p>
+		</div>		
+	</article>
+	<!--课程大纲-->
+	<article style="margin:0.2rem 0;width:100%;">
+		<section style="width:100%;height:0.6rem;background: #f0f0f0;display:flex;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;align-items:center;overflow:hidden;">
+			<div style="display:flex;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;justify-content:center;align-items: center; color:#333333;font-size:0.3rem;margin-left:0.2rem;float:left;    ">
+				<img src="image/a22.png" style="width:0.36rem;height:0.23rem;margin-right: 0.18rem;"/>
+				<span>课程大纲</span>
+			</div>		
+		</section>
+		<ul style="margin:0.2rem; ">
+			
+			<li>
+				<div style="display:flex;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;margin-bottom:0.15rem;   ">
+					<div style="font-size:0.3rem;color: #333333;width:0.9rem;   ">第二章</div><img src="image/a40.png" style="width:0.38rem;height:0.38rem;margin:0 0.25rem 0 0.25rem;   "/><p style="color:#666666;font-size:0.26rem;width:73%;line-height:0.4rem;     ">广东省深圳市广东省深圳市南山区软件产业广东省深圳市南山区软件产业广东省深圳市南山区软件产业</p>
+				</div>
+				<ul style="margin-left:0.1rem; ">
+					<li style="display:flex;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;margin-bottom:0.15rem;">
+						<div style="font-size:0.26rem;color: #666666;width:0.78rem;  ">第一节</div><img src="image/a42.png" style="width:0.38rem;height:0.38rem;margin:0 0.25rem 0 0.25rem; "/><p style="color:#666666;font-size:0.26rem;width:74%;line-height:0.4rem;">广东省深圳市南山区软件产业基地广东省深圳市南山区软件产业基地广东省深圳市南山区软件产业基地广东省深圳市南山区软件产业基地广东省深圳市南山区软件产业基地</p>
+					</li>
+					<li style="display:flex;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;margin-bottom:0.15rem; ">
+						<div style="font-size:0.26rem;color: #666666;width:0.78rem; ">第一节第一节第一节</div><img src="image/a42.png" style="width:0.38rem;height:0.38rem;margin:0 0.25rem 0 0.25rem; "/><p style="color:#666666;font-size:0.26rem;width:74%;line-height:0.4rem;">广东省深</p>
+					</li>
+					<li style="display:flex;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;margin-bottom:0.15rem;">
+						<div style="font-size:0.26rem;color: #666666;width:0.78rem; ">第一节</div><img src="image/a42.png" style="width:0.38rem;height:0.38rem;margin:0 0.25rem 0 0.25rem; "/><p style="color:#666666;font-size:0.26rem;width:74%;line-height:0.4rem;">广东省深广东省深广东省深广东省深</p>
+					</li>
+					
+				</ul>
+			</li>
+			<li>
+				<div style="display:flex;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;margin-bottom:0.15rem;   ">
+					<div style="font-size:0.3rem;color: #333333;width:0.9rem;   ">六章六章六章</div><img src="image/a40.png" style="width:0.38rem;height:0.38rem;margin:0 0.25rem 0 0.25rem;   "/><p style="color:#666666;font-size:0.26rem;width:73%;line-height:0.4rem;     ">广东省深圳市广东省深圳市南山区软件产业</p>
+				</div>
+				
+			</li>
+			<li>
+				<div style="display:flex;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;margin-bottom:0.15rem;   ">
+					<div style="font-size:0.3rem;color: #333333;width:0.9rem;   ">六章</div><img src="image/a40.png" style="width:0.38rem;height:0.38rem;margin:0 0.25rem 0 0.25rem;   "/><p style="color:#666666;font-size:0.26rem;width:73%;line-height:0.4rem;     ">广东省深圳市广东省深圳市南山区软件产业</p>
+				</div>
+				
+			</li>
+		</ul>
+		<!-- <ul style="margin:0.2rem; ">
+			
+			
+			<li>
+				<div style="display:flex;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;   ">
+					<span style="font-size:0.3rem;color: #333333; ">第三章</span><img src="image/a38.png" style="width:0.38rem;height:0.63rem;margin:0 0.25rem 0 0.25rem;   "/><span style="color:#666666;font-size:0.26rem; ">广东省深圳市</span>
+				</div>
+				<ul >
+					<li style="display:flex;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;position:relative;left:0.1rem;   ">
+						<span style="font-size:0.26rem;color: #666666; ">第一节</span><img src="image/a39.png" style="width:0.38rem;height:0.63rem;margin:0 0.25rem 0 0.25rem; "/><span style="color:#666666;font-size:0.26rem;">广东省深圳市南山区软件产业基地</span>
+					</li>
+						
+				</ul>
+			</li>
+			<li>
+				<div style="display:flex;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;   ">
+					<span style="font-size:0.3rem;color: #333333; ">第四章</span><img src="image/a40.png" style="width:0.38rem;height:0.38rem;margin:0 0.25rem 0 0.25rem;   "/><span style="color:#666666;font-size:0.26rem; ">广东省深圳市</span>
+				</div>
+				
+			</li>
+		</ul>
+		 -->
+		
+	</article>
+	
+	<!--课程所属教学点-->
+	<article style="margin:0.2rem 0;width:100%;">
+		<section style="width:100%;height:0.6rem;background: #f0f0f0;display:flex;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;align-items:center;overflow:hidden;">
+			<div style="display:flex;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;justify-content:center;align-items: center; color:#333333;font-size:0.3rem;margin-left:0.2rem;float:left;    ">
+				<img src="image/a33.png" style="width:0.26rem;height:0.32rem;margin-right: 0.18rem;"/>
+				<span>课程所属教学点</span>
+			</div>		
+		</section>
+		<section style="font-size:0.3rem;color: #00c435; ">
+			<div style="height:0.95rem;width:5.4rem;margin:0 auto;display:flex;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;justify-content: center;align-items: center;     ">聚德花苑辅导中心</div>
+			<div style="width:5.4rem;height:4rem;background:url(image/lun4.jpg);background-size:cover;margin: 0 auto;  "></div>
+			<div style="height:1.05rem;width:5.4rem;margin:0 auto;display:flex;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;align-items: center;justify-content: center;    ">
+				<div style="width:0.27rem;height:0.27rem;background:url(image/a35.png);background-size:cover;margin-right:0.2rem;   "></div>
+				<span>13658869520</span>
+			</div>
+			<div style="height:1rem;width:5.4rem;margin:0 auto;    ">
+				<a style="width:5.4rem;height:0.6rem;display:flex;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;align-items: center;justify-content: center;color:#ffffff;background: #00bf31;text-decoration: none;outline:none;border:0.01rem solid #00bf31;  " href="index.html">主页</a>
+			</div>
+			<div style="height:1.05rem;width:5.4rem;margin:0 auto;    ">
+				<div style="width:5.4rem;height:0.6rem;display:flex;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;align-items: center;justify-content: center;border:0.01rem solid #999999;color:#333333;text-decoration: none;outline:none;background:#ffffff;    " class="yubao">在线预报名</div>
+			</div>
+		</section>
+		
+	</article>
+	<!--蒙板-->
+    <div class="ceng"></div>
+    <!--信息弹框-->
+	<div class="alertBox" style="display:none; ">
+        <div class="alertBoxs">
+            <div class="closeAlertBox"></div>
+            <header style="height:0.9rem;font-size:0.3rem;color:#333333;width:100%;display: flex;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;justify-content:center;align-items:center;  ">
+            	请填写预报名信息
+            </header>
+            <div style="border-top:0.01rem solid #999999;width:90%;margin:0 auto;   "></div>
+            <div style="margin:0.5rem 0 0.32rem 0;display:flex;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;justify-content:center;align-items: center;   ">
+            	<input class="" type="text" name=""  value="" placeholder="请输入您的姓名" style="width:5rem;height:0.7rem;font-size:0.3rem;color:#333333;outline:none;border:0.01rem solid #999999;text-indent:1em;   "/>
+            </div>
+            <div style="margin-bottom:0.32rem;display:flex;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;justify-content:center;align-items: center;   ">
+            	<input class="" type="text" name=""  value="" placeholder="请输入您的手机号码" style="width:5rem;height:0.7rem;font-size:0.3rem;color:#333333;outline:none;border:0.01rem solid #999999;text-indent:1em;   "/>
+            </div> 
+            <div style="margin-bottom:0.32rem;display:flex;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;justify-content:center;align-items: center;   ">
+            	<select style="outline:none;width:5rem;height:0.7rem;border:0.01rem solid #999999;font-size:0.3rem;color:#333333;text-indent:1em;   ">
+					<option >一年级</option>
+					<option >二年级</option>
+					<option >三年级</option>
+					<option >四年级</option>
+					<option >五年级</option>
+					<option >六年级</option>
+					<option >七年级</option>
+					<option >八年级</option>
+					<option >九年级</option>
+					<option >高一</option>
+					<option >高二</option>
+					<option >高三</option>
+				</select>
+            </div>
+            <div style="margin-bottom:0.32rem;display:flex;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;justify-content:center;align-items: center;   ">
+            	<select style="outline:none;width:5rem;height:0.7rem;border:0.01rem solid #999999;font-size:0.3rem;color:#333333;text-indent:1em;   ">
+					<option >语文</option>
+					<option >数学</option>
+					<option >英语</option>
+					<option >地理</option>
+					<option >历史</option>
+					<option >政治</option>
+					<option >历史与社会</option>
+					<option >物理</option>
+					<option >化学</option>
+					<option >生物</option>
+				</select>
+            </div>
+            <div style="margin:0.5rem auto 0 auto;display:flex;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;justify-content: center;align-items: center;      ">
+				<a style="width:5rem;height:0.7rem;display:flex;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;align-items: center;justify-content: center;color:#ffffff;background: #00bf31;border:0.01rem solid #00bf31;font-size:0.3rem;text-decoration: none;outline:none;     " >在线预报名</a>
+			</div>                
+        </div>
+    </div>
+    
+	<!--课程推荐-->
+	<article>
+		<div style="font-size:0.3rem;color:#999999;margin-bottom:0.35rem;margin-left:0.2rem;   ">学习该课程的同学还学习了</div>
+		<section style="margin:0 0.2rem 0.4rem 0.2rem; ">
+			<div class="swiper-container">
+			    <div class="swiper-wrapper">
+			        <div class="swiper-slide">
+			        	<a href="kechengxiang.html" style="display:block;text-decoration: none;  ">
+							<div style="width:100%;height:3rem;background:url(image/lun4.jpg);background-size:cover;"></div>
+							<div style="margin-top:0.25rem; ">
+								<p style="color: #666666;font-size:0.3rem;display:flex;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;justify-content: space-between;margin-bottom:0.24rem;   ">
+									招生对象：小学1-6年级
+									<span>
+										￥<span style="color: #ff8200;">5000</span>
+									</span>
+								</p>
+								<p style="color: #999999;font-size:0.3rem;">
+									辅导日期：<span style="color:#9ccd64; ">2014-10-30——2015-10-05</span>
+								</p>
+							</div>
+						</a>
+			        </div>
+			        <div class="swiper-slide" >
+			        	<a href="kechengxiang.html" style="display:block;text-decoration: none;  ">
+							<div style="width:100%;height:3rem;background:url(image/lun3.jpg);background-size:cover;"></div>
+							<div style="margin-top:0.25rem; ">
+								<p style="color: #666666;font-size:0.3rem;display:flex;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;justify-content: space-between;margin-bottom:0.24rem;   ">
+									招生对象：小学1-6年级
+									<span>
+										￥<span style="color: #ff8200;">5000</span>
+									</span>
+								</p>
+								<p style="color: #999999;font-size:0.3rem;">
+									辅导日期：<span style="color:#9ccd64; ">2014-10-30——2015-10-05</span>
+								</p>
+							</div>
+						</a>
+			        </div>
+			        <div class="swiper-slide" >
+			        	<a href="kechengxiang.html" style="display:block;text-decoration: none;  ">
+							<div style="width:100%;height:3rem;background:url(image/lun2.jpg);background-size:cover;"></div>
+							<div style="margin-top:0.25rem; ">
+								<p style="color: #666666;font-size:0.3rem;display:flex;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;justify-content: space-between;margin-bottom:0.24rem;   ">
+									招生对象：小学1-6年级
+									<span>
+										￥<span style="color: #ff8200;">5000</span>
+									</span>
+								</p>
+								<p style="color: #999999;font-size:0.3rem;">
+									辅导日期：<span style="color:#9ccd64; ">2014-10-30——2015-10-05</span>
+								</p>
+							</div>
+						</a>
+			        </div>
+			        <div class="swiper-slide" >
+			        	<a href="kechengxiang.html" style="display:block;text-decoration: none;  ">
+							<div style="width:100%;height:3rem;background:url(image/lun1.jpg);background-size:cover;"></div>
+							<div style="margin-top:0.25rem; ">
+								<p style="color: #666666;font-size:0.3rem;display:flex;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;justify-content: space-between;margin-bottom:0.24rem;   ">
+									招生对象：小学1-6年级
+									<span>
+										￥<span style="color: #ff8200;">5000</span>
+									</span>
+								</p>
+								<p style="color: #999999;font-size:0.3rem;">
+									辅导日期：<span style="color:#9ccd64; ">2014-10-30——2015-10-05</span>
+								</p>
+							</div>
+						</a>
+			        </div>
+			    </div>   
+			</div>
+		</section>
+	</article>
+	<!--底部-->
+	<footer style="font-size: 0.24rem;color:#5b5b5b;display: flex;display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;justify-content: center;align-items: center;   ">
+		<p>
+			&copy;&nbsp;2016&nbsp;&nbsp;&nbsp;深圳市考拉超课科技股份有限公司版权所有	
+		</p>
+	</footer>
+	<script language="javascript"> 
+		var mySwiper = new Swiper('.swiper-container',{
+		slidesPerView :1.2,
+		spaceBetween : 10,
+		
+		})
+    </script>
+	<script type="text/javascript">
+		$(function(){
+			$(".yubao").on("tap",function(){
+				$(".ceng").show();
+                $(".alertBox").show(); 
+		    });	
+		    $(".snian .sji").on("tap",function(){
+				$(".snian .sji").css("border","0.01rem solid #999999");	
+				$(".snian .sji") .css("color","#333333");
+				$(this).css("border","0.01rem solid #00c435");	
+				$(this) .css("color","#00c435");
+		    });	
+		    $(".closeAlertBox").on("tap",function(){
+		    	$(".alertBox").hide();
+				$(".ceng").hide();	      
+		    });
+		    	
+				
+		});
+	</script>
+</body>
+</html>

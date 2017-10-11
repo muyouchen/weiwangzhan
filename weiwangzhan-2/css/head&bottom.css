@@ -1,0 +1,122 @@
+body, div, h1, h2, h3, h4, h5, h6, p, blockquote, pre, dl, dt, dd, ol, ul, li, hr, fieldset, form, label, legend, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, summary, hgroup ,a{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-family: Verdana,"Microsoft YaHei", "SimHei", "SimSun";
+}
+*{ -webkit-tap-highlight-color: rgba(0,0,0,0);-webkit-tap-highlight-color: transparent; /* For some Androids */ }
+a {
+    -webkit-touch-callout: none;
+    -ms-touch-callout: none;
+    -moz-touch-callout: none;
+    -o-touch-callout: none;
+    touch-callout: none;
+}
+img {
+	/*max-width: 100%;*/
+	display: block;
+	border:0;
+	vertical-align:middle;
+}
+ul {
+	list-style:none;
+}
+html, body {
+	min-height: 100%;	
+}
+body {
+	font-family: Verdana;
+	-webkit-text-size-adjust: none;
+	background-color:#efefef;
+}
+a {
+	/*	*/
+	text-decoration:none;
+}
+a:active, a:hover {
+	outline: 0;
+}
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+.cb{clear:both;}
+
+.fb40{font-size:0.4rem;color:#636271;}
+.fb26{font-size:0.26rem;color:#636271;}
+.fb24{font-size:0.26rem;color:#636271;}
+.fb20{font-size:0.2rem;color:#9d9cac;}
+.fr80{font-size:0.8rem;color:#ea3243;}
+.fr40{font-size:0.4rem;color:#ea3243;}
+.fr26{font-size:0.28rem;color:#ea3243;}
+
+.head{width:6.4rem;position:fixed;z-index:100;}
+.title{width:6.4rem;height:0.9rem;background-color:#e34554;text-align:center;color:#ffffff;font-size:0.3rem;line-height:0.9rem;}
+.logo img{width:1.4rem;height:0.45rem;display:inline-block;}
+.user-ico-o{position:absolute;left:0.3rem;top:0.15rem}
+.user-ico{border-radius:50%;-webkit-border-radius:50%;-moz-border-radius:50%;-o-border-radius:50%;overflow:hidden;width:0.6rem;height:0.6rem;display:block;}
+.rrweb-o{position:absolute;right:0.3rem;top:0.15rem;}
+.rrweb1{display:block;width:0.79rem;height:0.3rem;color:#ea3243;font-size:0.2rem;text-align:center;line-height:0.3rem;background:#FFFFFF;border-radius:0.08rem;}
+.rrweb2{display:block;font-size:0.2rem;color:#FFFFFF;line-height:0.3rem;}
+
+
+/*资讯尾部*/
+.mc-bottom{margin-top:0.1rem;margin-bottom:1.2rem;}
+.app-web-pc{width:6.4rem;height:0.57rem;background:#FFFFFF;text-align:center;}
+.app-web-pc a{width:2.133rem;color:#9D9CAC;font-size:0.26rem;float:left;line-height:0.57rem;}
+.app-web-pc i{margin-right:0.05rem;}
+.app i{width:0.35rem;height:0.35rem;display:inline-block;background:url(../img/app-ico.png) no-repeat;background-size:100% auto;vertical-align:middle;}
+.web i{width:0.35rem;height:0.35rem;display:inline-block;background:url(../img/web-ico.png) no-repeat;background-size:100% auto;vertical-align:middle;}
+.pc i{width:0.35rem;height:0.35rem;display:inline-block;background:url(../img/pc-ico.png) no-repeat;background-size:100% auto;vertical-align:middle;}
+.mc-b-nav{text-align:center;font-size:0;}
+.mc-b-nav1{font-size:0;text-align:center;margin-top:0.3rem;}
+.mc-b-nav1 a{color:#9d9cac;font-size:0.24rem;height:0.24rem;border-right:1px solid #9d9cac;padding:0 0.2rem;}
+.mc-b-nav1 a:last-child{border:0;}
+.mc-b-nav1:after{content:'';width:5.8rem;height:1px;background:#9d9cac;margin:0.12rem auto;display:block;}
+.mc-b-nav span{color:#9d9cac;font-size:0.24rem;}
+
+
+.bottom{border-top:0.01rem solid #eee;width:6.4rem;height:0.9rem;background:#FFFFFF;position:fixed;z-index:100;bottom:0;}
+
+
+.b-i{width:1.6rem;height:0.9rem;float:left;text-align:center;}
+.b-i span{font-size:0.18rem;color:#9d9cac;display:block;}
+.on span{color:#636271;}
+.tz-ico{width:0.55rem;height:0.49rem;margin:0.06rem auto;display:block;background:url(../img/tz-ico.png) no-repeat;background-size:100% auto;}
+.on .tz-ico{background:url(../img/tzon-ico.png) no-repeat;background-size:100% auto;}
+.zh-ico{width:0.55rem;height:0.49rem;margin:0.06rem auto;display:block;background:url(../img/zh-ico.png) no-repeat;background-size:100% auto;}
+.on .zh-ico{background:url(../img/zhon-ico.png) no-repeat;background-size:100% auto;}
+.zx-ico{width:0.55rem;height:0.49rem;margin:0.06rem auto;display:block;background:url(../img/zx-ico.png) no-repeat;background-size:100% auto;}
+.on .zx-ico{background:url(../img/zxon-ico.png) no-repeat;background-size:100% auto;}
+.more-ico{width:0.55rem;height:0.49rem;margin:0.06rem auto;display:block;background:url(../img/more-ico.png) no-repeat;background-size:100% auto;}
+.on .more-ico{background:url(../img/moreon-ico.png) no-repeat;background-size:100% auto;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<!--<script type="text/javascript" src="js/setviewport1080.js" ></script>-->
+	<script type="text/javascript" src="js/jquery-1.11.1.min.js" ></script>
+	<link rel="stylesheet" href="css/head&bottom-d.css" />
+	<link rel="stylesheet" href="css/open-account.css" />
+	<title>开通资金存管账户</title>
+</head>
+<body>
+	<div class="oa-box ">
+		<div class="oa-boxi">
+			<!--头部  显示隐藏头部 show-scroll-top-->
+			<div class="oa-topo">
+				<!--隐藏头部-->	
+				<div class="scroll-top">
+					<div class="oa-top2">
+						<a href="javascript:;" class="return-icon-w"></a>	
+						<span>开通资金存管账户</span>												
+					</div>
+				</div>
+				<div class="oa-top">
+					<div class="oa-top1">
+						<a href="javascript:;" class="return-icon-w"></a>	
+						<span>开通资金存管账户</span>						
+					</div>									
+				</div>
+				<div class="oa-tb">					
+					<div class="oa-input">
+						<span class="fl">真实姓名：</span>
+						<input type="text" class="oa-inputi" placeholder="请输入您的真实姓名" />
+					</div>
+					<div class="oa-input">
+						<span class="fl">身份证：</span>
+						<input type="number" class="oa-inputi" placeholder="请输入您的身份证号码" />
+					</div>
+				</div>
+				
+			</div>
+		
+			<!--购买按钮-->
+			<div class="xq-btno2">				
+				<a href="javascript:;" class="xq-btn2">立即开通华兴银行存管账户</a>		
+			</div>
+			
+	</div>
+</body>
+<script>
+	document.addEventListener('touchstart',function(){},false);	
+	
+</script>
+<script>
+			
+	$(document).ready(function(){
+		var clientHeight = $("html")[0].clientHeight;
+    $(".oa-box").css("min-height",(clientHeight));
+　　})			
+</script>
+<script>
+	$(document).ready(function(){
+     $(window).scroll(function() {
+         var top = $(".oa-top").offset().top; //获取指定位置
+         var scrollTop = $(window).scrollTop();  //获取当前滑动位置
+         if(scrollTop > top){                 //滑动到该位置时执行代码
+           $(".oa-topo").addClass("show-scroll-top");
+         }else{
+           $(".oa-topo").removeClass("show-scroll-top");
+         }
+         });
+        });
+       var doc=document.documentElement,scale = doc.clientWidth / 1080;
+		doc.style.fontSize =doc.clientWidth / 10.80 + 'px';
+
+</script>
+
+</html>

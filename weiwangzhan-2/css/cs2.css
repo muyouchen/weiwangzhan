@@ -1,0 +1,170 @@
+html {
+    font-size: 200px;
+}
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 0.24rem;
+}
+@media only screen and (max-width: 300px) {
+    html {
+        font-size: 83.3333px;
+    }
+    .viewport {
+        max-width: 300px;
+    }
+}
+@media only screen and (max-width: 310px) and (min-width: 300px) {
+    html {
+        font-size: 83.3333px;
+    }
+    .viewport {
+        max-width: 300px;
+    }
+}
+@media only screen and (max-width: 320px) and (min-width: 310px) {
+    html {
+        font-size: 88.8889px;
+    }
+    .viewport {
+        max-width: 320px;
+    }
+}
+@media only screen and (max-width: 360px) and (min-width: 320px) {
+    html {
+        font-size: 100px;
+    }
+    .viewport {
+        max-width: 360px;
+    }
+}
+@media only screen and (max-width: 360px) and (min-width: 350px) {
+    html {
+        font-size: 100px;
+    }
+    .viewport {
+        max-width: 360px;
+    }
+}
+@media only screen and (max-width: 470px) and (min-width: 360px) {
+    html {
+        font-size: 100px;
+    }
+    .viewport {
+        max-width: 470px;
+    }
+}
+@media only screen and (max-width: 480px) and (min-width: 470px) {
+    html {
+        font-size: 130px;
+    }
+    .viewport {
+        max-width: 480px;
+    }
+}
+@media only screen and (max-width: 560px) and (min-width: 480px) {
+    html {
+        font-size: 133.333px;
+    }
+    .viewport {
+        max-width: 560px;
+    }
+}
+@media only screen and (max-width: 570px) and (min-width: 560px) {
+    html {
+        font-size: 158.333px;
+    }
+    .viewport {
+        max-width: 570px;
+    }
+}
+@media only screen and (max-width: 640px) and (min-width: 570px) {
+    html {
+        font-size: 158.333px;
+    }
+    .viewport {
+        max-width: 640px;
+    }
+}
+@media only screen and (max-width: 640px) and (min-width: 630px) {
+    html {
+        font-size: 177.778px;
+    }
+    .viewport {
+        max-width: 640px;
+    }
+}
+@media only screen and (min-width: 640px) {
+    html {
+        font-size: 200px;
+    }
+    .viewport {
+        width: 100%;
+    }
+}
+.viewport {
+    /* margin: auto; */
+    /* max-width: 3.6rem; */
+    position: relative;
+}
+.pro_main{}
+.pro_title{width:100%;}
+.pro_title img{width:100%;display:block;}
+
+.pro_main{width:100%;overflow:hidden;background:url("/mobile/images/redpacket/pro_bj.png") repeat scroll 0 0 / 100% auto;}
+.pro_sida{margin-top:0.52rem;height:0.5rem;text-align:center;}
+.pro_sida img{height:100%;}
+
+.pro_item{margin:0 0.24rem 0.88rem;}
+.pro_item li{margin-top:0.52rem;overflow:hidden;}
+.pro_img{float:left;width:1.16rem;height:1.16rem;}
+.pro_img img{width:100%;height:100%;}
+
+.pro_list{float:left;width:76%;margin-left:0.22rem;}
+.pro_f1{font-size:0.34rem;color:#515151;margin-top:0.12rem;padding-bottom:0.08rem;border-bottom:2px solid #a6a6a6;}
+.pro_f2{font-size:0.24rem;color:#919191;margin-top:0.08rem;}
+
+
+.pro_jy{background:url("/mobile/images/redpacket/shade.jpg") repeat scroll 0 0 / 100% auto #dc353d;overflow:hidden;}
+.pro_jy .pro_img{width:1.18rem;height:0.78rem;}
+.pro_jy .pro_f1{margin-top:0;color:#fff;border-bottom: 2px solid #fff;}
+.pro_jy .pro_f2{color:#ffe221;}
+.pro_jy  .pro_item{margin-top:0.68rem;margin-bottom:0;}
+.pro_jy  .pro_item li{margin-top:0;margin-bottom:0.9rem;}
+.pro_btn{width:100%;height:1.5rem;display:block;}
+.pro_btn img{width:100%;height:100%;}
+
+.pro_number{width:100%;font-size:0.64rem;color:#515151;margin-top:0.64rem;text-align:center;}
+.pro_week{width:100%;font-size:0.24rem;color:#919191;text-align:center;}
+.pro_twocode{width:2.4rem;height:2.4rem;margin:0.8rem auto 1.18rem;}
+.pro_twocode img{width:100%;height:100%;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
